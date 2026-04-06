@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import {join} from 'node:path';
 import process from 'node:process';
 import {execa} from 'execa';
