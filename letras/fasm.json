@@ -1,0 +1,6 @@
+{
+  "name": "fasm",
+  "version": "1.73.32",
+  "link": "https://flatassembler.net/fasm-{{ version }}.tgz",
+  "bin": "./fasm/fasm.x64"
+}
