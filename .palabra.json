@@ -1,4 +1,5 @@
 {
+    "camino": "/usr/src/local",
     "letras": {
         "bun": "*",
         "deno": "*",

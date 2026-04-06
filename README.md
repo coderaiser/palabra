@@ -25,6 +25,7 @@ First thing you should do is:
 
 ```json
 {
+    "camino": "~/.local/src",
     "letras": {
         "fasm": "*"
     }
