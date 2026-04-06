@@ -6,12 +6,9 @@
   "description": "Palabra software installer",
   "homepage": "https://github.com/coderaiser/palabra#readme",
   "main": "",
-  "release": false,
-  "tag": false,
-  "changelog": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coderaiser/putout.git"
+    "url": "git+https://github.com/coderaiser/palabra.git"
   },
   "scripts": {
     "test": "madrun test",
