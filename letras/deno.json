@@ -1,7 +1,6 @@
 {
     "name": "deno",
-    "link": "https://deno.land/install.sh",
-    "bin": "bin/deno",
+    "url": "https://deno.land/install.sh",
     "env": {
         "DENO_DIR": "{{ camino }}"
     }
