@@ -1,5 +1,9 @@
 {
     "name": "go",
     "version": "1.21.2",
+    "bin": {
+        "go": "bin/go",
+        "gofmt": "bin/gofmt"
+    },
     "url": "https://go.dev/dl/go${{ version }}.linux-amd64.tar.gz"
 }
