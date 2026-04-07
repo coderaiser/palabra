@@ -1,0 +1,5 @@
+{
+    "name": "go",
+    "version": "1.21.2",
+    "url": "https://go.dev/dl/go${{ version }}.linux-amd64.tar.gz"
+}
