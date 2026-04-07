@@ -1,4 +1,7 @@
 {
     "name": "bun",
-    "url": "https://bun.sh/install"
+    "url": "https://bun.sh/install",
+    "env": {
+        "BUN_INSTALL": "{{ camino }}"
+    }
 }
