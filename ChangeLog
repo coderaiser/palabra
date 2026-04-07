@@ -1,3 +1,8 @@
+2026.04.07, v1.7.1
+
+fix:
+- f618396 npmignore: fixture
+
 2026.04.07, v1.7.0
 
 feature:
