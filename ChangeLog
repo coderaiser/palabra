@@ -1,3 +1,9 @@
+2026.04.07, v1.4.0
+
+feature:
+- d621d90 palabra: |bash -> bash -c
+- dc6726a bun: add
+
 2026.04.06, v1.3.0
 
 feature:
