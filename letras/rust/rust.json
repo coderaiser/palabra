@@ -18,7 +18,7 @@
         "rustfmt": "bin/rustfmt",
         "rustup": "bin/rustup"
     },
-    "dir": "cargo",
+    "hogar": "cargo",
     "env": {
         "RUSTUP_HOME": "{{ directorio }}/rustup",
         "CARGO_HOME": "{{ directorio }}/cargo"
