@@ -20,7 +20,7 @@ Install software easier then ever before.
 npm i palabra -g
 ```
 
-# Usage
+## Usage
 
 First thing you should do is:
 
@@ -39,6 +39,14 @@ Then run:
 
 ```sh
 palabra
+```
+
+### `i`nstall
+
+You can also use interactive mode:
+
+```
+palabra i bun node deno rust go nvim fasm
 ```
 
 That's it!

@@ -6,25 +6,13 @@ import {hablar} from '../lib/hablar.js';
 const {stringify} = JSON;
 
 const {UPDATE} = process.env;
-const createLetra = (name, letras) => {
-    if (letras)
-        return {
-            letras,
-        };
-    
-    return {
-        letras: {
-            [name]: '*',
-        },
-    };
-};
 
 export const createComprar = (dir) => ({equal}) => {
     const fixture = readFixtures(dir);
     
     return async (name, letraParte) => {
-        const letra = createLetra(name, letraParte);
-        const [silaba] = await escuchar(letra);
+        const palabra = createPalabra(name, letraParte);
+        const [silaba] = await escuchar(palabra);
         
         const commands = hablar([silaba]);
         const result = stringify(commands, null, 4);

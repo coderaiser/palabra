@@ -1,24 +1,26 @@
 #!/usr/bin/env node
 
-import {join} from 'node:path';
 import process from 'node:process';
 import {execa} from 'execa';
 import {tryToCatch} from 'try-to-catch';
-import {create} from '../lib/palabra.js';
+import {parseArgs} from '../lib/parse-args.js';
+import {instalar} from '../lib/cli/instalar.js';
 
-const [arg] = process.argv.slice(2);
-const name = join(process.cwd(), '.palabra.json');
+const argv = process.argv.slice(2);
+const args = parseArgs(argv);
 
-const {default: palabras} = await import(name, {
-    with: {
-        type: 'json',
-    },
-});
+const instrucciones = args._.shift();
 
-const cmd = await create(palabras);
+let cmd = '';
 
-if (arg !== '-q')
+if (!instrucciones || instrucciones === 'i')
+    cmd = await instalar(args._);
+
+if (!args.quiet)
     console.log(`> ${cmd}`);
+
+if (args['dry-run'])
+    process.exit(0);
 
 const [error] = await tryToCatch(execa, cmd, {
     shell: '/bin/bash',
@@ -27,3 +29,4 @@ const [error] = await tryToCatch(execa, cmd, {
 
 if (error)
     process.exitCode = error.exitCode;
+

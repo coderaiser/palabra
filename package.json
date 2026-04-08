@@ -29,7 +29,8 @@
   "dependencies": {
     "execa": "^9.6.1",
     "rendy": "^5.0.2",
-    "try-to-catch": "^4.0.5"
+    "try-to-catch": "^4.0.5",
+    "yargs-parser": "^22.0.0"
   },
   "keywords": [
     "putout",
