@@ -2,6 +2,7 @@ import process from 'node:process';
 import {readFixtures} from './fixture.js';
 import {escuchar} from '../lib/escuchar.js';
 import {hablar} from '../lib/hablar.js';
+import {createPalabra} from '../lib/palabra.js';
 
 const {stringify} = JSON;
 
