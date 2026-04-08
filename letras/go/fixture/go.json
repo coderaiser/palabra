@@ -2,7 +2,7 @@
     "wget https://go.dev/dl/go1.21.2.linux-amd64.tar.gz",
     "rm -rf ~/.local/src/go",
     "mkdir -p ~/.local/src/go",
-    "tar zxf go1.21.2.linux-amd64.tar.gz -C ~/.local/src/go",
+    "tar zxf go1.21.2.linux-amd64.tar.gz -C ~/.local/src",
     "rm go1.21.2.linux-amd64.tar.gz",
     "mkdir -p ~/.local/bin",
     "ln -fs ~/.local/src/bin/go ~/.local/bin/go",

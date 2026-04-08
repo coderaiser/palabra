@@ -1,0 +1,9 @@
+[
+    "wget https://flatassembler.net/fasm-1.73.32.tgz",
+    "rm -rf ~/.local/src/fasm",
+    "mkdir -p ~/.local/src/fasm",
+    "tar zxf fasm-1.73.32.tgz -C ~/.local/src",
+    "rm fasm-1.73.32.tgz",
+    "mkdir -p ~/.local/bin",
+    "ln -fs ~/.local/src/fasm/fasm.x64 ~/.local/bin/fasm"
+]
