@@ -5,9 +5,17 @@ import {execa} from 'execa';
 import {tryToCatch} from 'try-to-catch';
 import {parseArgs} from '../lib/cli/parse-args.js';
 import {instalar} from '../lib/cli/instalar.js';
+import info from '../package.json' with {
+    type: 'json',
+};
 
 const argv = process.argv.slice(2);
 const args = parseArgs(argv);
+
+if (args.version) {
+    console.log(`v${info.version}`);
+    process.exit();
+}
 
 const instrucciones = args._.shift();
 
