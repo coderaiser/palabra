@@ -1,3 +1,8 @@
+2026.04.08, v1.8.5
+
+fix:
+- 54cd560 palabra: mkdir bin
+
 2026.04.08, v1.8.4
 
 feature:
