@@ -4,5 +4,6 @@
     "mkdir -p ~/.local/src/nvim",
     "tar zxf nvim-linux-x86_64.tar.gz -C ~/.local/src/nvim",
     "rm nvim-linux-x86_64.tar.gz",
+    "mkdir -p ~/.local/bin",
     "ln -fs ~/.local/src/nvim/bin/nvim ~/.local/bin/nvim"
 ]

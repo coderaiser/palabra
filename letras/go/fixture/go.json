@@ -4,6 +4,7 @@
     "mkdir -p ~/.local/src/go",
     "tar zxf go1.21.2.linux-amd64.tar.gz -C ~/.local/src/go",
     "rm go1.21.2.linux-amd64.tar.gz",
+    "mkdir -p ~/.local/bin",
     "ln -fs ~/.local/src/bin/go ~/.local/bin/go",
     "ln -fs ~/.local/src/bin/gofmt ~/.local/bin/gofmt"
 ]
