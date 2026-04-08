@@ -1,3 +1,9 @@
+2026.04.08, v1.8.3
+
+fix:
+- 55e5dd2 palabra: buscar: version
+- 9a1bbb7 palabra: buscar: version
+
 2026.04.08, v1.8.2
 
 feature:
