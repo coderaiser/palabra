@@ -1,0 +1,18 @@
+[
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo bash -c \"$(curl -fsSL https://sh.rustup.rs)\" -- -y",
+    "mkdir -p ~/.local/bin",
+    "ln -fs ~/.local/src/bin/cargo ~/.local/bin/cargo",
+    "ln -fs ~/.local/src/bin/cargo-clippy ~/.local/bin/cargo-clippy",
+    "ln -fs ~/.local/src/bin/cargo-fmt ~/.local/bin/cargo-fmt",
+    "ln -fs ~/.local/src/bin/cargo-miri ~/.local/bin/cargo-miri",
+    "ln -fs ~/.local/src/bin/clippy-driver ~/.local/bin/clippy-driver",
+    "ln -fs ~/.local/src/bin/rls ~/.local/bin/rls",
+    "ln -fs ~/.local/src/bin/rust-analyzer ~/.local/bin/rust-analyzer",
+    "ln -fs ~/.local/src/bin/rust-gdb ~/.local/bin/rust-gdb",
+    "ln -fs ~/.local/src/bin/rust-gdbgui ~/.local/bin/rust-gdbgui",
+    "ln -fs ~/.local/src/bin/rust-lldb ~/.local/bin/rust-lldb",
+    "ln -fs ~/.local/src/bin/rustc ~/.local/bin/rustc",
+    "ln -fs ~/.local/src/bin/rustdoc ~/.local/bin/rustdoc",
+    "ln -fs ~/.local/src/bin/rustfmt ~/.local/bin/rustfmt",
+    "ln -fs ~/.local/src/bin/rustup ~/.local/bin/rustup"
+]

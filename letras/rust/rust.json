@@ -2,6 +2,23 @@
     "name": "rust",
     "url": "https://sh.rustup.rs",
     "confirmar": false,
+    "bin": {
+        "cargo":  "bin/cargo",
+        "cargo-clippy": "bin/cargo-clippy",
+        "cargo-fmt": "bin/cargo-fmt",
+        "cargo-miri": "bin/cargo-miri",
+        "clippy-driver": "bin/clippy-driver",
+        "rls": "bin/rls",
+        "rust-analyzer": "bin/rust-analyzer",
+        "rust-gdb": "bin/rust-gdb",
+        "rust-gdbgui": "bin/rust-gdbgui",
+        "rust-lldb": "bin/rust-lldb",
+        "rustc": "bin/rustc",
+        "rustdoc": "bin/rustdoc",
+        "rustfmt": "bin/rustfmt",
+        "rustup": "bin/rustup"
+    },
+    "dir": "cargo",
     "env": {
         "RUSTUP_HOME": "{{ directorio }}/rustup",
         "CARGO_HOME": "{{ directorio }}/cargo"

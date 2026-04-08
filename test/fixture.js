@@ -2,8 +2,10 @@ import {join, dirname} from 'node:path';
 import {
     readFileSync,
     writeFileSync,
+    mkdirSync,
 } from 'node:fs';
 import {fileURLToPath} from 'node:url';
+import {mkdir} from 'node:fs/promises';
 import kebabCase from 'just-kebab-case';
 
 export const readFixtures = (dir) => {
@@ -42,7 +44,11 @@ const writeFixture = (url, name, value) => {
     const dir = parseDirectory(url);
     
     const dirFixture = join(dir, 'fixture');
+    mkdirSync(dirFixture, {
+        recursive: true,
+    });
     const longName = join(dirFixture, name);
     
     return writeFileSync(`${longName}.json`, value);
 };
+
