@@ -1,3 +1,11 @@
+2026.04.08, v1.9.0
+
+fix:
+- 12b92a1 letras: rust
+
+feature:
+- 50115f2 letra: rust: bin
+
 2026.04.08, v1.8.6
 
 fix:
