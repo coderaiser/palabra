@@ -14,5 +14,7 @@
     "ln -fs ~/.local/src/bin/rustc ~/.local/bin/rustc",
     "ln -fs ~/.local/src/bin/rustdoc ~/.local/bin/rustdoc",
     "ln -fs ~/.local/src/bin/rustfmt ~/.local/bin/rustfmt",
-    "ln -fs ~/.local/src/bin/rustup ~/.local/bin/rustup"
+    "ln -fs ~/.local/src/bin/rustup ~/.local/bin/rustup",
+    "rustup update",
+    "rustup toolchain install stable"
 ]

@@ -5,7 +5,6 @@ import {
     mkdirSync,
 } from 'node:fs';
 import {fileURLToPath} from 'node:url';
-import {mkdir} from 'node:fs/promises';
 import kebabCase from 'just-kebab-case';
 
 export const readFixtures = (dir) => {
@@ -51,4 +50,3 @@ const writeFixture = (url, name, value) => {
     
     return writeFileSync(`${longName}.json`, value);
 };
-

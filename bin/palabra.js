@@ -21,10 +21,14 @@ const instrucciones = args._.shift();
 
 let cmd = '';
 
-if (!instrucciones || instrucciones === 'i')
-    cmd = await instalar(args._);
+if (!instrucciones || instrucciones === 'i') {
+    cmd = await instalar(args._, args);
+} else {
+    console.error('palabra i [letra1, letra2, ..., letraN]');
+    process.exit(1);
+}
 
-if (!args.quiet)
+if (!args.quiet && cmd)
     console.log(`> ${cmd}`);
 
 if (args['dry-run'])

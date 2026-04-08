@@ -3,7 +3,7 @@
     "url": "https://sh.rustup.rs",
     "confirmar": false,
     "bin": {
-        "cargo":  "bin/cargo",
+        "cargo": "bin/cargo",
         "cargo-clippy": "bin/cargo-clippy",
         "cargo-fmt": "bin/cargo-fmt",
         "cargo-miri": "bin/cargo-miri",
@@ -22,5 +22,9 @@
     "env": {
         "RUSTUP_HOME": "{{ directorio }}/rustup",
         "CARGO_HOME": "{{ directorio }}/cargo"
-    }
+    },
+    "commands": [
+        "rustup update",
+        "rustup toolchain install stable"
+    ]
 }
