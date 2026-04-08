@@ -3,7 +3,7 @@
 import process from 'node:process';
 import {execa} from 'execa';
 import {tryToCatch} from 'try-to-catch';
-import {parseArgs} from '../lib/parse-args.js';
+import {parseArgs} from '../lib/cli/parse-args.js';
 import {instalar} from '../lib/cli/instalar.js';
 
 const argv = process.argv.slice(2);

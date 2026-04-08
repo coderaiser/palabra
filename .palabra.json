@@ -1,5 +1,5 @@
 {
-    "camino": "/usr/src/local",
+    "directorio": "/usr/src/local",
     "letras": {
         "bun": "*",
         "deno": "*",

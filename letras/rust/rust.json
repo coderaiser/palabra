@@ -3,7 +3,7 @@
     "url": "https://sh.rustup.rs",
     "confirmar": false,
     "env": {
-        "RUSTUP_HOME": "{{ camino }}/rustup",
-        "CARGO_HOME": "{{ camino }}/cargo"
+        "RUSTUP_HOME": "{{ directorio }}/rustup",
+        "CARGO_HOME": "{{ directorio }}/cargo"
     }
 }

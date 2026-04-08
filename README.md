@@ -28,7 +28,7 @@ First thing you should do is:
 
 ```json
 {
-    "camino": "~/.local/src",
+    "directorio": "~/.local/src",
     "letras": {
         "fasm": "*"
     }
@@ -41,12 +41,12 @@ Then run:
 palabra
 ```
 
-### `i`nstall
+### `i`
 
 You can also use interactive mode:
 
 ```
-palabra i bun node deno rust go nvim fasm
+palabra i bun node deno rust go nvim fasm -d /usr/local/src
 ```
 
 That's it!
