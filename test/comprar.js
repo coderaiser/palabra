@@ -11,8 +11,10 @@ const {UPDATE} = process.env;
 export const createComprar = (dir) => ({equal}) => {
     const fixture = readFixtures(dir);
     
-    return async (name, letraParte) => {
-        const palabra = createPalabra(name, letraParte);
+    return async (name, letras) => {
+        const palabra = createPalabra(name, {
+            letras,
+        });
         const [silaba] = await escuchar(palabra);
         
         const commands = hablar([silaba]);
