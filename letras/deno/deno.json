@@ -2,6 +2,6 @@
     "name": "deno",
     "url": "https://deno.land/install.sh",
     "env": {
-        "DENO_DIR": "{{ directorio }}/deno"
+        "DENO_INSTALL": "{{ directorio }}/deno"
     }
 }
