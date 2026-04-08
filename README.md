@@ -13,7 +13,6 @@ Install software easier then ever before.
 
 <img width="546" height="405" alt="image" src="https://github.com/user-attachments/assets/272fb625-a51e-488f-9d58-89268f810efb" />
 
-
 ## Install
 
 ```

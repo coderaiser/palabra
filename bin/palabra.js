@@ -37,4 +37,3 @@ const [error] = await tryToCatch(execa, cmd, {
 
 if (error)
     process.exitCode = error.exitCode;
-

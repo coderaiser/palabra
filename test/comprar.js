@@ -24,4 +24,3 @@ export const createComprar = (dir) => ({equal}) => {
         return equal(result, fixture[name]);
     };
 };
-
