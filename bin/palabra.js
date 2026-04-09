@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import process from 'node:process';
+import {readdir} from 'node:fs/promises';
 import {execa} from 'execa';
 import {tryToCatch} from 'try-to-catch';
 import {parseArgs} from '../lib/cli/parse-args.js';
@@ -23,6 +24,10 @@ let cmd = '';
 
 if (!instrucciones || instrucciones === 'i') {
     cmd = await instalar(args._, args);
+} else if (instrucciones === 'l') {
+    const list = await readdir(new URL('../letras', import.meta.url));
+    console.log(list);
+    process.exit(0);
 } else {
     console.error('palabra i [letra1, letra2, ..., letraN]');
     process.exit(1);
@@ -41,3 +46,4 @@ const [error] = await tryToCatch(execa, cmd, {
 
 if (error)
     process.exitCode = error.exitCode;
+

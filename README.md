@@ -48,6 +48,20 @@ You can also use interactive mode:
 palabra i bun node deno rust go nvim fasm -d /usr/local/src
 ```
 
+### `l`
+
+To list all packages that can be installed use `l`:
+
+```
+palabra l
+[
+  'bun',  'deno',
+  'fasm', 'go',
+  'nvim', 'nvm',
+  'rust'
+]
+```
+
 That's it!
 
 ## License
