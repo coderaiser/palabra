@@ -1,3 +1,8 @@
+2026.04.09, v1.11.2
+
+fix:
+- c3ff317 palabra: letras: rust: rm commands
+
 2026.04.09, v1.11.1
 
 fix:
