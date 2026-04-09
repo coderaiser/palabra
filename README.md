@@ -48,6 +48,14 @@ You can also use interactive mode:
 palabra i bun node deno rust go nvim fasm -d /usr/local/src
 ```
 
+You can also pass version:
+
+```
+palabra i nvim@0.11
+```
+
+Default installation directory is `~/.local/src`.
+
 ### `l`
 
 To list all packages that can be installed use `l`:
