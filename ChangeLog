@@ -1,3 +1,10 @@
+2026.04.09, v1.11.0
+
+feature:
+- b29f4e3 palabra: add ability to pass version i interactive mode
+- 05c8eac lista: add
+- 5c6abb0 letras: nvm: add
+
 2026.04.09, v1.10.2
 
 fix:
