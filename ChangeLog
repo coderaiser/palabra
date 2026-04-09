@@ -1,3 +1,8 @@
+2026.04.09, v1.12.2
+
+fix:
+- 519ca93 palabra: letras: rust: commands: add source
+
 2026.04.09, v1.12.1
 
 fix:
