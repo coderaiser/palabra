@@ -15,6 +15,5 @@
     "ln -fs ~/.local/src/cargo/bin/rustdoc ~/.local/bin/rustdoc",
     "ln -fs ~/.local/src/cargo/bin/rustfmt ~/.local/bin/rustfmt",
     "ln -fs ~/.local/src/cargo/bin/rustup ~/.local/bin/rustup",
-    "rustup update",
     "rustup toolchain install stable"
 ]

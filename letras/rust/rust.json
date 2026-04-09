@@ -24,7 +24,6 @@
         "CARGO_HOME": "{{ directorio }}/cargo"
     },
     "commands": [
-        "rustup update",
         "rustup toolchain install stable"
     ]
 }
