@@ -24,6 +24,7 @@
         "CARGO_HOME": "{{ directorio }}/cargo"
     },
     "commands": [
+        "source $CARGO_HOME/env",
         "rustup default stable"
     ]
 }
