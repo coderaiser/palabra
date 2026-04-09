@@ -8,7 +8,7 @@ const {stringify} = JSON;
 
 const {UPDATE} = process.env;
 
-export const createComprar = (dir) => ({equal}) => {
+export const createComprar = (dir) => ({fail, equal}) => {
     const fixture = readFixtures(dir);
     
     return async (name, letras) => {
@@ -19,6 +19,9 @@ export const createComprar = (dir) => ({equal}) => {
         
         const commands = hablar([silaba]);
         const result = stringify(commands, null, 4);
+        
+        if (result.includes('not found'))
+            return fail(commands[0]);
         
         if (UPDATE)
             fixture[name] = result;

@@ -22,5 +22,5 @@
     "env": {
         "RUSTUP_HOME": "{{ directorio }}/rustup",
         "CARGO_HOME": "{{ directorio }}/cargo"
-    },
+    }
 }
