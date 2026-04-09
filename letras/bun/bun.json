@@ -3,5 +3,9 @@
     "url": "https://bun.sh/install",
     "env": {
         "BUN_INSTALL": "{{ directorio }}/bun"
+    },
+    "bin": {
+        "bun": "bin/bun",
+        "bunx": "bin/bunx"
     }
 }
