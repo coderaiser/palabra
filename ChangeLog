@@ -1,3 +1,8 @@
+2026.04.09, v1.11.1
+
+fix:
+- 6aaaf21 palabra: letra: rust: commands: rm update
+
 2026.04.09, v1.11.0
 
 feature:
