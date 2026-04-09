@@ -50,9 +50,6 @@
     "superc8": "^12.0.0",
     "supertape": "^12.10.5"
   },
-  "peerDependencies": {
-    "putout": ">=42"
-  },
   "license": "MIT",
   "engines": {
     "node": ">=22"
