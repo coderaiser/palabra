@@ -14,5 +14,6 @@
     "ln -fs ~/.local/src/cargo/bin/rustc ~/.local/bin/rustc",
     "ln -fs ~/.local/src/cargo/bin/rustdoc ~/.local/bin/rustdoc",
     "ln -fs ~/.local/src/cargo/bin/rustfmt ~/.local/bin/rustfmt",
-    "ln -fs ~/.local/src/cargo/bin/rustup ~/.local/bin/rustup"
+    "ln -fs ~/.local/src/cargo/bin/rustup ~/.local/bin/rustup",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo rustup toolchain install stable"
 ]

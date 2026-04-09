@@ -2,5 +2,5 @@
     "NVM_DIR=~/.local/src bash -c \"$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v{{ version }}/install.sh)\"",
     "mkdir -p ~/.local/bin",
     "ln -fs ~/.local/src/nvm/bin/nvm ~/.local/bin/nvm",
-    "source . ~/.local/src/nvm.sh"
+    "NVM_DIR=~/.local/src source . $NVM_DIR/nvm.sh"
 ]

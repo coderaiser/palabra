@@ -6,6 +6,6 @@
     "NVM_DIR": "{{ directorio }}"
   },
   "commands": [
-    "source . {{ directorio }}/nvm.sh"
+    "source . $NVM_DIR/nvm.sh"
   ]
 }
