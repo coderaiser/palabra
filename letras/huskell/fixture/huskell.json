@@ -1,0 +1,5 @@
+[
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 bash -c \"$(curl -fsSL https://get-ghcup.haskell.org)\"",
+    "mkdir -p ~/.local/bin",
+    "ln -fs ~/.local/src/haskell/bin/haskell ~/.local/bin/haskell"
+]

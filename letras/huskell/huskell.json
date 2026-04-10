@@ -1,0 +1,8 @@
+{
+    "name": "haskell",
+    "url": "https://get-ghcup.haskell.org",
+    "env": {
+        "BOOTSTRAP_HASKELL_NONINTERACTIVE": "1"
+    },
+    "execute": true
+}
