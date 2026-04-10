@@ -12,7 +12,6 @@
     ],
     "postinstall": [
         "sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' {{ directorio }}/nvm/nvm.sh",
-        "rm {{ directorio }}/nvm/nvm.sh.bak",
-        "source {{ directorio }}/nvm/nvm.sh"
+        "rm {{ directorio }}/nvm/nvm.sh.bak"
     ]
 }
