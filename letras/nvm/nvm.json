@@ -8,7 +8,7 @@
     "bin": {
     },
     "preinstall": [
-        "mkdir {{ directorio }}/nvm"
+        "mkdir -p {{ directorio }}/nvm"
     ],
     "postinstall": [
         "sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' {{ directorio }}/nvm/nvm.sh",

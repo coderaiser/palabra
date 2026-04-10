@@ -1,5 +1,5 @@
 [
-    "NVM_DIR=~/.local/src/nvm mkdir ~/.local/src/nvm",
+    "NVM_DIR=~/.local/src/nvm mkdir -p ~/.local/src/nvm",
     "NVM_DIR=~/.local/src/nvm bash -c \"$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh)\"",
     "mkdir -p ~/.local/bin",
     "NVM_DIR=~/.local/src/nvm sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' ~/.local/src/nvm/nvm.sh",
