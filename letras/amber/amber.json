@@ -1,5 +1,9 @@
 {
     "name": "amber",
     "version": "0.5.1-alpha",
+    "bin": {
+        "amber": "amber"
+    },
+    "hogar": "",
     "url": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-linux-gnu-x86_64.tar.xz"
 }
