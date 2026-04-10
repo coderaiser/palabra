@@ -5,5 +5,5 @@
     "ln -fs ~/.local/src/nvm/bin/nvm ~/.local/bin/nvm",
     "NVM_DIR=~/.local/src/nvm sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' $NVM_DIR/nvm.sh",
     "NVM_DIR=~/.local/src/nvm rm $NVM_DIR/nvm.sh.bak",
-    "NVM_DIR=~/.local/src/nvm source \"$NVM_DIR/nvm.sh\""
+    "NVM_DIR=~/.local/src/nvm source $NVM_DIR/nvm.sh"
 ]
