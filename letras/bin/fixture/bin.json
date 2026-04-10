@@ -1,0 +1,8 @@
+[
+    "curl -fsSL https://github.com/marcosnils/bin/releases/download/v0.24.3/bin_v0.24.3_linux_amd64",
+    "mkdir -p ~/.local/bin",
+    "ln -fs ~/.local/src/bin/bin ~/.local/bin/bin",
+    "mkdir -f ~/.local/src/bin",
+    "mv -f ~/.local/src/bin_v0.24.3_linux_amd64 ~/.local/src/bin/bin",
+    "chmod +x ~/.local/src/bin/bin"
+]

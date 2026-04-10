@@ -1,0 +1,14 @@
+{
+    "name": "bin",
+    "version": "v0.24.3",
+    "url": "https://github.com/marcosnils/bin/releases/download/{{ version }}/bin_{{ version }}_linux_amd64",
+    "bin": {
+        "bin": "bin"
+    },
+    "execute": false,
+    "commands": [
+        "mkdir -f {{ directorio }}/bin",
+        "mv -f {{ directorio }}/bin_{{ version }}_linux_amd64 {{ directorio }}/bin/bin",
+        "chmod +x {{ directorio }}/bin/bin"
+    ]
+}
