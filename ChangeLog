@@ -1,3 +1,8 @@
+2026.04.10, v1.12.9
+
+fix:
+- b0061c6 palabra: letras: nvm: NVM_DIR
+
 2026.04.10, v1.12.8
 
 fix:
