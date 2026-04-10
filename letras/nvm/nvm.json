@@ -5,6 +5,8 @@
     "env": {
         "NVM_DIR": "{{ directorio }}/nvm"
     },
+    "bin": {
+    },
     "preinstall": [
         "mkdir $NVM_DIR"
     ],
