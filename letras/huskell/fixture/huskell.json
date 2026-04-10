@@ -1,5 +1,10 @@
 [
     "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 bash -c \"$(curl -fsSL https://get-ghcup.haskell.org)\"",
     "mkdir -p ~/.local/bin",
-    "ln -fs ~/.local/src/haskell/bin/haskell ~/.local/bin/haskell"
+    "ln -fs ~/.local/src/haskell/bin/cabal ~/.local/bin/cabal",
+    "ln -fs ~/.local/src/haskell/bin/ghcup ~/.local/bin/ghcup",
+    "ln -fs ~/.local/src/haskell/bin/stack ~/.local/bin/stack",
+    "ln -fs ~/.local/src/haskell/bin/ghc ~/.local/bin/ghc",
+    "ln -fs ~/.local/src/haskell/bin/ghci ~/.local/bin/ghci",
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 mv ~/.ghcup ~/.local/src/ghcup"
 ]

@@ -4,5 +4,15 @@
     "env": {
         "BOOTSTRAP_HASKELL_NONINTERACTIVE": "1"
     },
-    "execute": true
+    "execute": true,
+    "bin": {
+        "cabal": "bin/cabal",
+        "ghcup": "bin/ghcup",
+        "stack": "bin/stack",
+        "ghc": "bin/ghc",
+        "ghci": "bin/ghci"
+    },
+    "commands": [
+        "mv ~/.ghcup {{ directorio }}/ghcup"
+    ]
 }
