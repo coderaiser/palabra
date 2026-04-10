@@ -1,13 +1,13 @@
 {
-  "name": "nvm",
-  "version": "0.40.4",
-  "url": "https://raw.githubusercontent.com/nvm-sh/nvm/v{{ version }}/install.sh",
-  "env": {
-    "NVM_DIR": "{{ directorio }}"
-  },
-  "commands": [
-    "sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' $NVM_DIR/nvm.sh;",
-    "rm $NVM_DIR/nvm.sh.bak;",
-    "source . $NVM_DIR/nvm.sh"
-  ]
+    "name": "nvm",
+    "version": "0.40.4",
+    "url": "https://raw.githubusercontent.com/nvm-sh/nvm/v{{ version }}/install.sh",
+    "env": {
+        "NVM_DIR": "{{ directorio }}"
+    },
+    "commands": [
+        "sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' $NVM_DIR/nvm.sh;",
+        "rm $NVM_DIR/nvm.sh.bak;",
+        "source . $NVM_DIR/nvm.sh"
+    ]
 }

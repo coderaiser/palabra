@@ -15,6 +15,7 @@ export const createComprar = (dir) => ({fail, equal}) => {
         const palabra = createPalabra(name, {
             letras,
         });
+        
         const [silaba] = await escuchar(palabra);
         
         const commands = hablar([silaba]);

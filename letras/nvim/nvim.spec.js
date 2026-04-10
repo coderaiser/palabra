@@ -11,4 +11,3 @@ test('palabra: letras: nvim: v1.0.0', async ({comprar}) => {
         nvim: '1.0.0',
     });
 });
-
