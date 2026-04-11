@@ -1,13 +1,13 @@
 {
-  "name": "yara",
-  "version": "1.14.0",
-  "url": "https://github.com/VirusTotal/yara-x/releases/download/v{{ version }}/yara-x-v{{ version }}-x86_64-unknown-linux-gnu.gz",
-  "bin": {
-    "yara": "yr",
-    "yr": "yr"
-  },
-  "commands": [
-    "mkdir -f {{ directorio }}/yara",
-    "mv -f {{ directorio }}/yr {{ directorio }}/yara/"
-  ]
+    "name": "yara",
+    "version": "1.14.0",
+    "url": "https://github.com/VirusTotal/yara-x/releases/download/v{{ version }}/yara-x-v{{ version }}-x86_64-unknown-linux-gnu.gz",
+    "bin": {
+        "yara": "yr",
+        "yr": "yr"
+    },
+    "commands": [
+        "mkdir -f {{ directorio }}/yara",
+        "mv -f {{ directorio }}/yr {{ directorio }}/yara/"
+    ]
 }

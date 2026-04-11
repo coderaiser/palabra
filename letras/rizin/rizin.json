@@ -1,21 +1,19 @@
 {
-  "name": "rizin",
-  "version": "0.8.2",
-  "url": "https://github.com/rizinorg/rizin/releases/download/v{{ version }}/rizin-v{{ version }}-static-x86_64.tar.xz",
-  "bin": {
-     "rizin": "bin/rizin",
-     "rz-asm": "bin/rasm",
-     "rz-ax": "bin/rax",
-     "rz-bin": "bin/rz-bin",
-     "rz-diff": "bin/rz-diff",
-     "rz-find": "bin/rz-find",
-     "rz-gg": "bin/rz-gg",
-     "rz-hash": "bin/rz-hash",
-     "rz-run": "bin/rz-run",
-     "rz-sign": "bin/rz-sign",
-     "rz-test": "bin/rz-test"
-  },
-  "commands": [
-    "mv {{ directorio }}/rizin-v0.8.2-static-x86_64 {{ directorio }}/rizin"
-  ]
+    "name": "rizin",
+    "version": "0.8.2",
+    "url": "https://github.com/rizinorg/rizin/releases/download/v{{ version }}/rizin-v{{ version }}-static-x86_64.tar.xz",
+    "extractDirectory": "{{ directorio }}/ {{ name }}",
+    "bin": {
+        "rizin": "bin/rizin",
+        "rz-asm": "bin/rasm",
+        "rz-ax": "bin/rax",
+        "rz-bin": "bin/rz-bin",
+        "rz-diff": "bin/rz-diff",
+        "rz-find": "bin/rz-find",
+        "rz-gg": "bin/rz-gg",
+        "rz-hash": "bin/rz-hash",
+        "rz-run": "bin/rz-run",
+        "rz-sign": "bin/rz-sign",
+        "rz-test": "bin/rz-test"
+    }
 }
