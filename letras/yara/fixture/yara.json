@@ -7,6 +7,6 @@
     "mkdir -p ~/.local/bin",
     "ln -fs ~/.local/src/yara/yr ~/.local/bin/yara",
     "ln -fs ~/.local/src/yara/yr ~/.local/bin/yr",
-    "mkdir -f ~/.local/src/yara",
+    "mkdir -p ~/.local/src/yara",
     "mv -f ~/.local/src/yr ~/.local/src/yara/"
 ]

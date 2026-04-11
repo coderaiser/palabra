@@ -7,7 +7,7 @@
         "yr": "yr"
     },
     "commands": [
-        "mkdir -f {{ directorio }}/yara",
+        "mkdir -p {{ directorio }}/yara",
         "mv -f {{ directorio }}/yr {{ directorio }}/yara/"
     ]
 }

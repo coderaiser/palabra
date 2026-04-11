@@ -2,7 +2,7 @@
     "wget -c -nc https://github.com/rizinorg/rizin/releases/download/v0.8.2/rizin-v0.8.2-static-x86_64.tar.xz -O /tmp/rizin-v0.8.2-static-x86_64.tar.xz",
     "rm -rf ~/.local/src/rizin",
     "mkdir -p ~/.local/src/rizin",
-    "tar xf /tmp/rizin-v0.8.2-static-x86_64.tar.xz -C ~/.local/src/ rizin",
+    "tar xf /tmp/rizin-v0.8.2-static-x86_64.tar.xz -C ~/.local/src/rizin",
     "rm /tmp/rizin-v0.8.2-static-x86_64.tar.xz",
     "mkdir -p ~/.local/bin",
     "ln -fs ~/.local/src/rizin/bin/rizin ~/.local/bin/rizin",
