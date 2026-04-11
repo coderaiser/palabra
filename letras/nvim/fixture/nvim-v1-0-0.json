@@ -6,5 +6,5 @@
     "tar xf /tmp/nvim-linux-x86_64.tar.gz -C ~/.local/src",
     "rm /tmp/nvim-linux-x86_64.tar.gz",
     "ln -fs ~/.local/src/nvim/bin/nvim ~/.local/bin/nvim",
-    "mv ~/.local/src/nvim-linux-x86_64 ~/.local/src/nvim"
+    "mv -T ~/.local/src/nvim-linux-x86_64 ~/.local/src/nvim"
 ]
