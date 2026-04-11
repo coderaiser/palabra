@@ -1,3 +1,8 @@
+2026.04.11, v1.18.0
+
+feature:
+- 58c1b42 palabra: download to /tmp directory
+
 2026.04.11, v1.17.1
 
 fix:
