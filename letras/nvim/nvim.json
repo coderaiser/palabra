@@ -6,6 +6,6 @@
     },
     "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-x86_64.tar.gz",
     "afterInstall": [
-        "mv {{ directorio }}/nvim-linux-x86_64 {{ directorio }}/nvim"
+        "mv -T {{ directorio }}/nvim-linux-x86_64 {{ directorio }}/nvim"
     ]
 }
