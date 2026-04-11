@@ -22,11 +22,11 @@ const instrucciones = args._.shift();
 
 let cmd = '';
 
-if (!instrucciones || instrucciones === 'i') {
+if (!instrucciones || /^i(nstall)?$/.test(instrucciones)) {
     cmd = await instalar(args._, args);
-} else if (instrucciones === 'l') {
+} else if (/^l(ist)?$/.test(instrucciones)) {
     const list = await readdir(new URL('../letras', import.meta.url));
-    console.log(list);
+    console.log(list.join(' '));
     process.exit(0);
 } else {
     console.error('palabra i [letra1, letra2, ..., letraN]');
