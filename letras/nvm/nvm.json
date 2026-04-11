@@ -6,10 +6,10 @@
         "NVM_DIR": "{{ directorio }}/nvm"
     },
     "bin": {},
-    "preinstall": [
+    "beforeInstall": [
         "mkdir -p {{ directorio }}/nvm"
     ],
-    "postinstall": [
+    "afterInstall": [
         "sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' {{ directorio }}/nvm/nvm.sh",
         "rm {{ directorio }}/nvm/nvm.sh.bak"
     ]

@@ -1,9 +1,11 @@
 {
     "name": "nvim",
     "version": "0.12.0",
-    "hogar": "nvim-linux-x86_64",
     "bin": {
         "nvim": "bin/nvim"
     },
-    "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-x86_64.tar.gz"
+    "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-x86_64.tar.gz",
+    "afterInstall": [
+        "mv {{ directorio }}/nvim-linux-x86_64 {{ directorio }}/nvim"
+    ]
 }
