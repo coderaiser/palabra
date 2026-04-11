@@ -7,7 +7,7 @@
     },
     "execute": false,
     "commands": [
-        "mkdir -f {{ directorio }}/bin",
+        "mkdir -p {{ directorio }}/bin",
         "mv -f {{ directorio }}/bin_{{ version }}_linux_amd64 {{ directorio }}/bin/bin",
         "chmod +x {{ directorio }}/bin/bin"
     ]
