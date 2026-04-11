@@ -1,2 +1,2 @@
 [files]
-extend-exclude= ["ChangeLog", "**/fixture"]
+extend-exclude= ["ChangeLog", "**/fixture", "bin/**"]
