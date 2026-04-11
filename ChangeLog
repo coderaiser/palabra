@@ -1,3 +1,8 @@
+2026.04.11, v1.15.4
+
+feature:
+- be3ed91 palabra: letras: nvim: afterInstall
+
 2026.04.11, v1.15.3
 
 fix:
