@@ -5,8 +5,8 @@
     "extractDirectory": "{{ directorio }}/{{ name }}",
     "bin": {
         "rizin": "bin/rizin",
-        "rz-asm": "bin/rasm",
-        "rz-ax": "bin/rax",
+        "rz-asm": "bin/rz-asm",
+        "rz-ax": "bin/rz-ax",
         "rz-bin": "bin/rz-bin",
         "rz-diff": "bin/rz-diff",
         "rz-find": "bin/rz-find",
