@@ -1,10 +1,10 @@
 [
+    "mkdir -p ~/.local/bin",
     "wget -c -nc https://github.com/neovim/neovim/releases/download/v1.0.0/nvim-linux-x86_64.tar.gz -O /tmp/nvim-linux-x86_64.tar.gz",
     "rm -rf ~/.local/src/nvim",
     "mkdir -p ~/.local/src/nvim",
     "tar xf /tmp/nvim-linux-x86_64.tar.gz -C ~/.local/src",
     "rm /tmp/nvim-linux-x86_64.tar.gz",
-    "mkdir -p ~/.local/bin",
     "ln -fs ~/.local/src/nvim/bin/nvim ~/.local/bin/nvim",
     "mv ~/.local/src/nvim-linux-x86_64 ~/.local/src/nvim"
 ]

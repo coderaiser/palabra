@@ -16,9 +16,11 @@ export const createComprar = (dir) => ({fail, equal}) => {
             letras,
         });
         
-        const [silaba] = await escuchar(palabra);
+        const [directorio, silabas] = await escuchar(palabra);
         
-        const commands = hablar([silaba]);
+        const commands = hablar(silabas, {
+            directorio,
+        });
         const result = stringify(commands, null, 4);
         
         if (result.includes('not found'))

@@ -1,6 +1,6 @@
 [
-    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo bash -c \"$(curl -fsSL https://sh.rustup.rs)\" -- -y",
     "mkdir -p ~/.local/bin",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo bash -c \"$(curl -fsSL https://sh.rustup.rs)\" -- -y",
     "ln -fs ~/.local/src/cargo/bin/cargo ~/.local/bin/cargo",
     "ln -fs ~/.local/src/cargo/bin/cargo-clippy ~/.local/bin/cargo-clippy",
     "ln -fs ~/.local/src/cargo/bin/cargo-fmt ~/.local/bin/cargo-fmt",
