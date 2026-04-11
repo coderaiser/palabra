@@ -21,3 +21,5 @@ jobs:
         run: bun i --no-save
       - name: Palabra Install
         run: bun bin/palabra.js install `bun bin/palabra.js list`
+      - name: Palabra Run
+        run: eval `bun test/run-all-bin.js`
