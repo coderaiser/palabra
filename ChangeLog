@@ -1,3 +1,8 @@
+2026.04.11, v1.20.0
+
+feature:
+- 66506d8 palabra: letras: create bin directory only once at the beginning
+
 2026.04.11, v1.19.5
 
 feature:
