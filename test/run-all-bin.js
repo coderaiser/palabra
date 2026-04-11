@@ -17,7 +17,7 @@ for (const name of names) {
         continue;
     
     if (isString(letra.bin)) {
-        bins.push(`type ${letra.bin}`);
+        bins.push(`type ${letra.name}`);
         continue;
     }
     
