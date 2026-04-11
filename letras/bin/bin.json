@@ -5,10 +5,5 @@
     "bin": {
         "bin": "bin"
     },
-    "execute": false,
-    "commands": [
-        "mkdir -p {{ directorio }}/bin",
-        "mv -f {{ directorio }}/bin_{{ version }}_linux_amd64 {{ directorio }}/bin/bin",
-        "chmod +x {{ directorio }}/bin/bin"
-    ]
+    "preparado": true
 }
