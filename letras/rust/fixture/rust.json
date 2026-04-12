@@ -18,10 +18,9 @@
     "rustfmt --version",
     "cargo-clippy --version",
     "cargo-fmt --version",
-    "cargo-miri --version",
     "clippy-driver --version",
     "rust-gdb --version",
     "rustc --version",
     "rustdoc --version",
-    "rustfmt --version"
+    "rustup show"
 ]
