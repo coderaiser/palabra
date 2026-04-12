@@ -1,9 +1,9 @@
 {
     "name": "node",
     "dependencies": ["nvm"],
-    "bin": "/${NVM_DIR}/versions/node/$(node -v)/bin/node",
     "beforeInstall": [
         ". {{ directorio }}/nvm/nvm.sh",
-        "nvm i node"
+        "nvm i node",
+        "ln -fs ${NVM_DIR}/versions/node/$(node -v) {{ directorio }}/node"
     ]
 }
