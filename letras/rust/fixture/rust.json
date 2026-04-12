@@ -14,12 +14,12 @@
     "ln -fs ~/.local/src/cargo/bin/rustfmt ~/.local/bin/rustfmt",
     "ln -fs ~/.local/src/cargo/bin/rustup ~/.local/bin/rustup",
     "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo rustup default stable",
-    "cargo --version",
-    "rustfmt --version",
-    "cargo-clippy --version",
-    "cargo-fmt --version",
-    "clippy-driver --version",
-    "rustc --version",
-    "rustdoc --version",
-    "rustup show"
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo cargo --version",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo rustfmt --version",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo cargo-clippy --version",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo cargo-fmt --version",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo clippy-driver --version",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo rustc --version",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo rustdoc --version",
+    "RUSTUP_HOME=~/.local/src/rustup CARGO_HOME=~/.local/src/cargo rustup show"
 ]
