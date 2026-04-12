@@ -20,7 +20,6 @@
     "rz-asm -v",
     "rz-ax -v",
     "rz-bin -v",
-    "rz-diff -v",
     "rz-find -v",
     "rz-gg -v",
     "rz-hash -v",

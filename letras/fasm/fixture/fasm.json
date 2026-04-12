@@ -6,5 +6,5 @@
     "tar xf /tmp/fasm-1.73.32.tgz -C ~/.local/src",
     "rm /tmp/fasm-1.73.32.tgz",
     "ln -fs ~/.local/src/fasm/fasm.x64 ~/.local/bin/fasm",
-    "fasm -v"
+    "fasm ~/.local/src/fasm/examples/elfexe/hello64.asm"
 ]

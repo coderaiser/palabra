@@ -3,5 +3,5 @@
     "version": "1.73.32",
     "url": "https://flatassembler.net/fasm-{{ version }}.tgz",
     "bin": "fasm.x64",
-    "test": "fasm -v"
+    "test": "fasm {{ directorio }}/fasm/examples/elfexe/hello64.asm"
 }
