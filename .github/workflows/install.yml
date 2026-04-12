@@ -7,19 +7,17 @@ jobs:
     strategy:
       matrix:
         node-version:
+          - 22.x
+          - 24.x
           - 25.x
     steps:
       - uses: actions/checkout@v5
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
       - name: Install Bun
         run: bun i --no-save
       - name: Palabra Install
         run: bun bin/palabra.js install `bun bin/palabra.js list`
       - name: Palabra Run
-        run: eval `bun test/run-all-bin.js`
+        run: eval `bun scripts/run-all-bin.js`

@@ -21,6 +21,7 @@ export const createComprar = (dir) => ({fail, equal}) => {
         const commands = hablar(silabas, {
             directorio,
         });
+        
         const result = stringify(commands, null, 4);
         
         if (result.includes('not found'))

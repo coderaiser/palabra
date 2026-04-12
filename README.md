@@ -70,6 +70,10 @@ palabra l
 ]
 ```
 
+## Env variables
+
+Use `PALABRA_DIR` to override default installation path `~/.local/src`.
+
 That's it!
 
 ## License

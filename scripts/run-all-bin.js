@@ -25,6 +25,3 @@ for (const name of names) {
         bins.push(`type ${bin}`);
     }
 }
-
-console.log(bins.join(' && '));
-
