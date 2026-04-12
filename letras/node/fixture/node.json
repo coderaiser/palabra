@@ -4,7 +4,7 @@
     "NVM_DIR=~/.local/src/nvm bash -c \"$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh)\"",
     "NVM_DIR=~/.local/src/nvm sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' ~/.local/src/nvm/nvm.sh",
     "NVM_DIR=~/.local/src/nvm rm ~/.local/src/nvm/nvm.sh.bak",
-    ". ~/.local/src/nvm.sh",
+    ". ~/.local/src/nvm/nvm.sh",
     "nvm i node",
     "ln -fs ~/.local/src/node/${NVM_DIR}/versions/node/$(node -v)/bin/node ~/.local/bin/node"
 ]
