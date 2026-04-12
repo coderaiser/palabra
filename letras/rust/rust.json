@@ -28,7 +28,6 @@
         "rustc --version",
         "rustdoc --version",
         "rustfmt --version",
-        "rustup show"
     ],
     "env": {
         "RUSTUP_HOME": "{{ directorio }}/rustup",
