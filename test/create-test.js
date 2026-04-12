@@ -6,4 +6,3 @@ export const createTest = (dir) => {
         comprar: createComprar(dir),
     });
 };
-
