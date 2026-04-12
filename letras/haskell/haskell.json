@@ -1,10 +1,13 @@
 {
     "name": "haskell",
     "url": "https://get-ghcup.haskell.org",
+    "version": "9.6.7",
     "env": {
-        "BOOTSTRAP_HASKELL_NONINTERACTIVE": "1"
+        "BOOTSTRAP_HASKELL_NONINTERACTIVE": "1",
+        "BOOTSTRAP_HASKELL_GHC_VERSION": "{{ version }}"
     },
     "execute": true,
+    "hogar": "ghcup",
     "bin": {
         "cabal": "bin/cabal",
         "ghcup": "bin/ghcup",
@@ -12,7 +15,14 @@
         "ghc": "bin/ghc",
         "ghci": "bin/ghci"
     },
+    "test": [
+        "ghcup --version",
+        "cabal --version",
+        "ghc --version",
+        "stack --version"
+    ],
     "commands": [
-        "mv ~/.ghcup {{ directorio }}/ghcup"
+        "mv ~/.ghcup {{ directorio }}/ghcup",
+        "ln -fs {{ directorio }}/ghcup/ghc/{{ version }}/lib/ghc-{{ version }}/bin/ghc {{ directorio }}/../bin/ghc"
     ]
 }

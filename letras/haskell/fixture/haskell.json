@@ -1,10 +1,15 @@
 [
     "mkdir -p ~/.local/bin",
-    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 bash -c \"$(curl -fsSL https://get-ghcup.haskell.org)\"",
-    "ln -fs ~/.local/src/haskell/bin/cabal ~/.local/bin/cabal",
-    "ln -fs ~/.local/src/haskell/bin/ghcup ~/.local/bin/ghcup",
-    "ln -fs ~/.local/src/haskell/bin/stack ~/.local/bin/stack",
-    "ln -fs ~/.local/src/haskell/bin/ghc ~/.local/bin/ghc",
-    "ln -fs ~/.local/src/haskell/bin/ghci ~/.local/bin/ghci",
-    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 mv ~/.ghcup ~/.local/src/ghcup"
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.6.7 bash -c \"$(curl -fsSL https://get-ghcup.haskell.org)\"",
+    "ln -fs ~/.local/src/ghcup/bin/cabal ~/.local/bin/cabal",
+    "ln -fs ~/.local/src/ghcup/bin/ghcup ~/.local/bin/ghcup",
+    "ln -fs ~/.local/src/ghcup/bin/stack ~/.local/bin/stack",
+    "ln -fs ~/.local/src/ghcup/bin/ghc ~/.local/bin/ghc",
+    "ln -fs ~/.local/src/ghcup/bin/ghci ~/.local/bin/ghci",
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.6.7 mv ~/.ghcup ~/.local/src/ghcup",
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.6.7 ln -fs ~/.local/src/ghcup/ghc/9.6.7/lib/ghc-9.6.7/bin/ghc ~/.local/src/../bin/ghc",
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.6.7 ghcup --version",
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.6.7 cabal --version",
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.6.7 ghc --version",
+    "BOOTSTRAP_HASKELL_NONINTERACTIVE=1 BOOTSTRAP_HASKELL_GHC_VERSION=9.6.7 stack --version"
 ]
