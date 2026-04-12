@@ -5,5 +5,6 @@
     "mkdir -p ~/.local/src/amber",
     "tar xf /tmp/amber-linux-gnu-x86_64.tar.xz -C ~/.local/src",
     "rm /tmp/amber-linux-gnu-x86_64.tar.xz",
-    "ln -fs ~/.local/src/amber ~/.local/bin/amber"
+    "ln -fs ~/.local/src/amber ~/.local/bin/amber",
+    "amber -v"
 ]

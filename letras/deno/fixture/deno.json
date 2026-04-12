@@ -1,5 +1,6 @@
 [
     "mkdir -p ~/.local/bin",
     "DENO_INSTALL=~/.local/src/deno bash -c \"$(curl -fsSL https://deno.land/install.sh)\"",
-    "ln -fs ~/.local/src/deno/bin/deno ~/.local/bin/deno"
+    "ln -fs ~/.local/src/deno/bin/deno ~/.local/bin/deno",
+    "deno -v"
 ]

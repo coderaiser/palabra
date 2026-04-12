@@ -6,5 +6,6 @@
     "tar xf /tmp/go1.21.2.linux-amd64.tar.gz -C ~/.local/src",
     "rm /tmp/go1.21.2.linux-amd64.tar.gz",
     "ln -fs ~/.local/src/go/bin/go ~/.local/bin/go",
-    "ln -fs ~/.local/src/go/bin/gofmt ~/.local/bin/gofmt"
+    "ln -fs ~/.local/src/go/bin/gofmt ~/.local/bin/gofmt",
+    "go version"
 ]

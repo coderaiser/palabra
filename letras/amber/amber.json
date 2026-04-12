@@ -5,5 +5,6 @@
         "amber": "amber"
     },
     "hogar": "",
+    "test": "amber -v",
     "url": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-linux-gnu-x86_64.tar.xz"
 }

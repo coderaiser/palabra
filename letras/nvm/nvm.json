@@ -11,6 +11,11 @@
     ],
     "afterInstall": [
         "sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' {{ directorio }}/nvm/nvm.sh",
-        "rm {{ directorio }}/nvm/nvm.sh.bak"
+        "rm {{ directorio }}/nvm/nvm.sh.bak",
+        ". {{ directorio }}/nvm/nvm.sh"
+    ],
+    "test": [
+        ". {{ directorio }}/nvm/nvm.sh",
+        "nvm -v"
     ]
 }

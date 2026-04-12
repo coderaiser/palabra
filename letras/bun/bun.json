@@ -4,6 +4,10 @@
     "env": {
         "BUN_INSTALL": "{{ directorio }}/bun"
     },
+    "test": [
+        "bun -v",
+        "bunx -v"
+    ],
     "bin": {
         "bun": "bin/bun",
         "bunx": "bin/bunx"

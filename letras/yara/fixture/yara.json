@@ -8,5 +8,7 @@
     "ln -fs ~/.local/src/yara/yr ~/.local/bin/yara",
     "ln -fs ~/.local/src/yara/yr ~/.local/bin/yr",
     "mkdir -p ~/.local/src/yara",
-    "mv -f ~/.local/src/yr ~/.local/src/yara/"
+    "mv -f ~/.local/src/yr ~/.local/src/yara/",
+    "yara --version",
+    "yr --version"
 ]

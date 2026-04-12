@@ -3,5 +3,6 @@
     "url": "https://deno.land/install.sh",
     "env": {
         "DENO_INSTALL": "{{ directorio }}/deno"
-    }
+    },
+    "test": "deno -v"
 }
