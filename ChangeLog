@@ -1,3 +1,8 @@
+2026.04.12, v1.22.1
+
+fix:
+- a3be031 palabra: hablar: add " "
+
 2026.04.12, v1.22.0
 
 feature:
