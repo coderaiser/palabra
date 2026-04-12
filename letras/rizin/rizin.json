@@ -15,5 +15,18 @@
         "rz-run": "bin/rz-run",
         "rz-sign": "bin/rz-sign",
         "rz-test": "bin/rz-test"
-    }
+    },
+    "test": [
+        "rizin -v",
+        "rz-asm -v",
+        "rz-ax -v",
+        "rz-bin -v",
+        "rz-diff -v",
+        "rz-find -v",
+        "rz-gg -v",
+        "rz-hash -v",
+        "rz-run -v",
+        "rz-sign -v",
+        "rz-test -v"
+    ]
 }
