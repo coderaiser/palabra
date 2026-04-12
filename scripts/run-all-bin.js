@@ -3,6 +3,7 @@ import {readdir} from 'node:fs/promises';
 const isString = (a) => typeof a === 'string';
 const {keys} = Object;
 const names = await readdir(new URL('../letras', import.meta.url));
+const {log} = console;
 
 const bins = [];
 
@@ -25,3 +26,5 @@ for (const name of names) {
         bins.push(`type ${bin}`);
     }
 }
+
+log(bins.join(' && '));
