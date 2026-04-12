@@ -12,8 +12,7 @@
         "cabal": "bin/cabal",
         "ghcup": "bin/ghcup",
         "stack": "bin/stack",
-        "ghc": "bin/ghc",
-        "ghci": "bin/ghci"
+        "ghc": "bin/ghc"
     },
     "test": [
         "ghcup --version",
