@@ -9,9 +9,7 @@
         "cargo-miri": "bin/cargo-miri",
         "clippy-driver": "bin/clippy-driver",
         "rls": "bin/rls",
-        "rust-analyzer": "bin/rust-analyzer",
         "rust-gdb": "bin/rust-gdb",
-        "rust-gdbgui": "bin/rust-gdbgui",
         "rust-lldb": "bin/rust-lldb",
         "rustc": "bin/rustc",
         "rustdoc": "bin/rustdoc",
@@ -19,6 +17,19 @@
         "rustup": "bin/rustup"
     },
     "hogar": "cargo",
+    "test": [
+        "cargo --version",
+        "rustfmt --version",
+        "cargo-clippy --version",
+        "cargo-fmt --version",
+        "cargo-miri --version",
+        "clippy-driver --version",
+        "rust-gdb --version",
+        "rustc --version",
+        "rustdoc --version",
+        "rustfmt --version",
+        "rustup --version"
+    ],
     "env": {
         "RUSTUP_HOME": "{{ directorio }}/rustup",
         "CARGO_HOME": "{{ directorio }}/cargo"
