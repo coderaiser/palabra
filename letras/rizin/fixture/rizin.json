@@ -15,5 +15,16 @@
     "ln -fs ~/.local/src/rizin/bin/rz-hash ~/.local/bin/rz-hash",
     "ln -fs ~/.local/src/rizin/bin/rz-run ~/.local/bin/rz-run",
     "ln -fs ~/.local/src/rizin/bin/rz-sign ~/.local/bin/rz-sign",
-    "ln -fs ~/.local/src/rizin/bin/rz-test ~/.local/bin/rz-test"
+    "ln -fs ~/.local/src/rizin/bin/rz-test ~/.local/bin/rz-test",
+    "rizin -v",
+    "rz-asm -v",
+    "rz-ax -v",
+    "rz-bin -v",
+    "rz-diff -v",
+    "rz-find -v",
+    "rz-gg -v",
+    "rz-hash -v",
+    "rz-run -v",
+    "rz-sign -v",
+    "rz-test -v"
 ]

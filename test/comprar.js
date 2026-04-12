@@ -25,7 +25,7 @@ export const createComprar = (dir) => ({fail, equal}) => {
         const result = stringify(commands, null, 4);
         
         if (result.includes('not found'))
-            return fail(commands[0]);
+            return fail(commands[1]);
         
         if (UPDATE)
             fixture[name] = result;

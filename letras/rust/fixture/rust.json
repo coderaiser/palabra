@@ -23,6 +23,5 @@
     "rust-gdb --version",
     "rustc --version",
     "rustdoc --version",
-    "rustfmt --version",
-    "rustup show"
+    "rustfmt --version"
 ]
