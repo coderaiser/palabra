@@ -1,3 +1,10 @@
+2026.04.12, v1.23.0
+
+feature:
+- cc61c01 palabra: test: render
+- a038c61 palabra: letra: rust: test
+- fcd62dd palabra: letras: test
+
 2026.04.12, v1.22.1
 
 fix:
