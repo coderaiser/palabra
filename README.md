@@ -72,7 +72,7 @@ palabra l
 
 ## Env variables
 
-Use `PALABRA_DIR` to override default installation path `~/.local/src`.
+Use `PALABRA_DIR` or `XDG_DATA_HOME` to override default installation path `~/.local/share`.
 
 That's it!
 
