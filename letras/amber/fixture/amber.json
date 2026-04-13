@@ -3,8 +3,8 @@
     "wget -c -nc https://github.com/amber-lang/amber/releases/download/0.5.1-alpha/amber-linux-gnu-x86_64.tar.xz -O ${XDG_CACHE_HOME:-/tmp}/amber-linux-gnu-x86_64.tar.xz",
     "rm -rf ~/.local/src/amber",
     "mkdir -p ~/.local/src/amber",
-    "tar xf /tmp/amber-linux-gnu-x86_64.tar.xz -C ~/.local/src",
-    "rm /tmp/amber-linux-gnu-x86_64.tar.xz",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/amber-linux-gnu-x86_64.tar.xz -C ~/.local/src",
+    "rm ${XDG_CACHE_HOME:-/tmp}/amber-linux-gnu-x86_64.tar.xz",
     "ln -fs ~/.local/src/amber ~/.local/bin/amber",
     "amber --version"
 ]

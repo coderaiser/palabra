@@ -3,8 +3,8 @@
     "wget -c -nc https://github.com/neovim/neovim/releases/download/v1.0.0/nvim-linux-x86_64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/nvim-linux-x86_64.tar.gz",
     "rm -rf ~/.local/src/nvim",
     "mkdir -p ~/.local/src/nvim",
-    "tar xf /tmp/nvim-linux-x86_64.tar.gz -C ~/.local/src",
-    "rm /tmp/nvim-linux-x86_64.tar.gz",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/nvim-linux-x86_64.tar.gz -C ~/.local/src",
+    "rm ${XDG_CACHE_HOME:-/tmp}/nvim-linux-x86_64.tar.gz",
     "ln -fs ~/.local/src/nvim/bin/nvim ~/.local/bin/nvim",
     "mv -T ~/.local/src/nvim-linux-x86_64 ~/.local/src/nvim",
     "nvim -v"
