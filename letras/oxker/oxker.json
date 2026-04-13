@@ -1,9 +1,9 @@
 {
-  "name": "oxker",
-  "version": "0.13.1",
-  "url": "https://github.com/mrjackwills/oxker/releases/download/v{{ version }}/oxker_linux_x86_64.tar.gz",
-  "bin": "{{ name }}",
-  "commands": [
-    "mv {{ directorio }}/{{ name }} {{ directorio }}/{{ name }}/{{ name }}"
-  ]
+    "name": "oxker",
+    "version": "0.13.1",
+    "url": "https://github.com/mrjackwills/oxker/releases/download/v{{ version }}/oxker_linux_x86_64.tar.gz",
+    "bin": "{{ name }}",
+    "commands": [
+        "mv {{ directorio }}/{{ name }} {{ directorio }}/{{ name }}/{{ name }}"
+    ]
 }
