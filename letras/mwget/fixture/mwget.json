@@ -6,6 +6,6 @@
     "tar xf /tmp/mwget-linux-x64.tar.gz -C ~/.local/src",
     "rm /tmp/mwget-linux-x64.tar.gz",
     "ln -fs ~/.local/src/mwget/mwget ~/.local/bin/mwget",
-    "mv ~/.local/src/mwget-linux-x64 ~/.local/src/mwget",
+    "mv -f ~/.local/src/mwget-linux-x64 ~/.local/src/mwget",
     "mwget --version"
 ]

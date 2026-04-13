@@ -10,8 +10,5 @@
         "yara --version",
         "yr --version"
     ],
-    "commands": [
-        "mkdir -p {{ directorio }}/yara",
-        "mv -f {{ directorio }}/yr {{ directorio }}/yara/"
-    ]
+    "rename": "yr"
 }
