@@ -5,6 +5,7 @@
     "mkdir -p ~/.local/src/mwget",
     "tar xf ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz -C ~/.local/src",
     "rm ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz",
+    "chmod +x ~/.local/src/mwget/mwget",
     "ln -fs ~/.local/src/mwget/mwget ~/.local/bin/mwget",
     "mv -T ~/.local/src/mwget-linux-x64 ~/.local/src/mwget",
     "mwget --version"
