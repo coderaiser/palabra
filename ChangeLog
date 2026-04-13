@@ -1,3 +1,8 @@
+2026.04.14, v2.3.1
+
+fix:
+- 71f1581 palabra: extract: XDG_CACHE_HOME
+
 2026.04.14, v2.3.0
 
 feature:
