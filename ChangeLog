@@ -1,3 +1,8 @@
+2026.04.13, v2.0.0
+
+feature:
+- 533d458 palabra: respect XDG_DATA_HOME: default ~/.local/src -> ~/.local/share
+
 2026.04.13, v1.23.12
 
 fix:
