@@ -2,7 +2,7 @@
     "mkdir -p ~/.local/bin",
     "mkdir -p ~/.local/src/bin",
     "wget https://github.com/marcosnils/bin/releases/download/v0.24.3/bin_0.24.3_linux_amd64 -O ~/.local/src/bin/bin",
-    "chmod +x ~/.local/src/bin/bin",
     "ln -fs ~/.local/src/bin/bin ~/.local/bin/bin",
+    "chmod +x ~/.local/src/bin/bin",
     "bin -v"
 ]

@@ -2,9 +2,8 @@
     "name": "bin",
     "version": "0.24.3",
     "url": "https://github.com/marcosnils/bin/releases/download/v{{ version }}/bin_{{ version }}_linux_amd64",
-    "bin": {
-        "bin": "bin"
-    },
+    "bin": "bin",
     "test": "bin -v",
-    "preparado": true
+    "preparado": true,
+    "executable": true
 }
