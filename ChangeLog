@@ -1,3 +1,8 @@
+2026.04.14, v2.3.4
+
+fix:
+- c4506d0 palabra: letras: mwget: executable
+
 2026.04.14, v2.3.3
 
 fix:
