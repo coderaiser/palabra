@@ -12,6 +12,6 @@
     ],
     "commands": [
         "mkdir -p {{ directorio }}/yara",
-        "mv -T {{ directorio }}/yr {{ directorio }}/yara/"
+        "mv {{ directorio }}/yr {{ directorio }}/yara/"
     ]
 }
