@@ -5,5 +5,6 @@
     "mkdir -p ~/.local/src/oxker",
     "tar xf ${XDG_CACHE_HOME:-/tmp}/oxker_linux_x86_64.tar.gz -C ~/.local/src",
     "rm ${XDG_CACHE_HOME:-/tmp}/oxker_linux_x86_64.tar.gz",
-    "ln -fs ~/.local/src/oxker ~/.local/bin/oxker"
+    "ln -fs ~/.local/src/oxker ~/.local/bin/oxker",
+    "oxker --version"
 ]
