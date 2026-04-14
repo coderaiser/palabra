@@ -9,7 +9,9 @@
 [CoverageURL]: https://coveralls.io/github/coderaiser/palabra?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/coderaiser/palabra/badge.svg?branch=master&service=github
 
-Install software easier then ever before.
+Install packages easier than ever before.
+Palabra install packages named letras, each letra is a set of commands, written in declarative form,
+and compiled during install to bash script.
 
 <img width="546" height="405" alt="image" src="https://github.com/user-attachments/assets/272fb625-a51e-488f-9d58-89268f810efb" />
 
@@ -40,12 +42,12 @@ Then run:
 palabra
 ```
 
-### `i`
+### `(i)nstall`
 
 You can also use interactive mode:
 
 ```
-palabra i bun node deno rust go nvim fasm -d /usr/local/src
+palabra install bun node deno rust go nvim fasm -d /usr/local/src
 ```
 
 You can also pass version:
@@ -56,7 +58,7 @@ palabra i nvim@0.11
 
 Default installation directory is `~/.local/src`.
 
-### `l`
+### `list`
 
 To list all packages that can be installed use `l`:
 
@@ -75,6 +77,35 @@ palabra l
 Use `PALABRA_DIR` or [`XDG_DATA_HOME`](https://specifications.freedesktop.org/basedir/latest/) to override default installation path `~/.local/share`.
 
 That's it!
+
+## Types of letras
+
+There is a different types of letras. Each author release in one of next ways.
+
+### Single binary
+
+Provided url to executable, that should be downloaded and set `chmod +x`, and
+then copy to directory `$PALABRA_DIR` and make symlinks.
+
+### Single Binary archive
+
+Provided url to archive with single executable, that should be downloaded, and
+then copy to directory `$PALABRA_DIR` and made symlinks.
+
+### Nested archive
+
+Provided url to archive with nested directory structure, that should be downloaded,
+extracted and then copied to directory `$PALABRA_DIR` and made symlinks.
+
+### Root archive
+
+Provided url to archive with all files located on top level, that should be downloaded,
+extracted and then copied to directory `$PALABRA_DIR` and made symlinks.
+
+### Script
+
+Provided url to script that should be downloaded and executed 
+
 
 ## License
 
