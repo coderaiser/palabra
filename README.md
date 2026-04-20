@@ -104,8 +104,7 @@ extracted and then copied to directory `$PALABRA_DIR` and made symlinks.
 
 ### Script
 
-Provided url to script that should be downloaded and executed 
-
+Provided url to script that should be downloaded and executed
 
 ## License
 

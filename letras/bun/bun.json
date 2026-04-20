@@ -1,9 +1,13 @@
 {
     "name": "bun",
+    "version": "1.3.12",
     "url": "https://bun.sh/install",
     "env": {
         "BUN_INSTALL": "{{ directorio }}/bun"
     },
+    "args": [
+        "\"bun-v{{ version }}\""
+    ],
     "test": [
         "bun -v",
         "bunx -v"
