@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import process from 'node:process';
+import process, {exit} from 'node:process';
 import {readdir} from 'node:fs/promises';
 import {execa} from 'execa';
 import {tryToCatch} from 'try-to-catch';
@@ -16,6 +16,12 @@ const args = parseArgs(argv);
 if (args.version) {
     console.log(`v${info.version}`);
     process.exit();
+}
+
+if (args.help || !args._.length) {
+    const {help} = await import('../lib/help.js');
+    console.log(help());
+    exit();
 }
 
 const instrucciones = args._.shift();
@@ -46,3 +52,4 @@ const [error] = await tryToCatch(execa, cmd, {
 
 if (error)
     process.exitCode = error.exitCode;
+
