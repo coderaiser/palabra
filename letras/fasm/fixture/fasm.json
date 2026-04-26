@@ -1,6 +1,6 @@
 [
     "mkdir -p ~/.local/bin",
-    "wget -c -nc https://flatassembler.net/fasm-1.73.32.tgz -O ${XDG_CACHE_HOME:-/tmp}/fasm-1.73.32.tgz",
+    "wget -c https://flatassembler.net/fasm-1.73.32.tgz -O ${XDG_CACHE_HOME:-/tmp}/fasm-1.73.32.tgz",
     "rm -rf ~/.local/share/fasm",
     "mkdir -p ~/.local/share/fasm",
     "tar xf ${XDG_CACHE_HOME:-/tmp}/fasm-1.73.32.tgz -C ~/.local/share",

@@ -1,6 +1,6 @@
 [
     "mkdir -p ~/.local/bin",
-    "wget -c -nc https://github.com/dundee/gdu/releases/download/v5.35.0/gdu_linux_amd64.tgz -O ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz",
+    "wget -c https://github.com/dundee/gdu/releases/download/v5.35.0/gdu_linux_amd64.tgz -O ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz",
     "rm -rf ~/.local/share/gdu",
     "mkdir -p ~/.local/share/gdu",
     "tar xf ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz -C ~/.local/share",
