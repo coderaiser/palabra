@@ -5,5 +5,5 @@
   "test": "gdu -v",
   "executable": true,
   "bin": "{{ name }}",
-  "rename": "{{ name }}-linux-amd64"
+  "rename": "{{ name }}_linux_amd64"
 }
