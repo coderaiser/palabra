@@ -1,10 +1,10 @@
 [
     "mkdir -p ~/.local/bin",
-    "NVM_DIR=~/.local/src/nvm mkdir -p ~/.local/src/nvm",
-    "NVM_DIR=~/.local/src/nvm bash -c \"$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh)\"",
-    "NVM_DIR=~/.local/src/nvm sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' ~/.local/src/nvm/nvm.sh",
-    "NVM_DIR=~/.local/src/nvm rm ~/.local/src/nvm/nvm.sh.bak",
-    "NVM_DIR=~/.local/src/nvm . ~/.local/src/nvm/nvm.sh",
-    "NVM_DIR=~/.local/src/nvm . ~/.local/src/nvm/nvm.sh",
-    "NVM_DIR=~/.local/src/nvm nvm -v"
+    "NVM_DIR=~/.local/share/nvm mkdir -p ~/.local/share/nvm",
+    "NVM_DIR=~/.local/share/nvm bash -c \"$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh)\"",
+    "NVM_DIR=~/.local/share/nvm sed -i.bak 's/nvm_die_on_prefix() {/nvm_die_on_prefix() { return;/' ~/.local/share/nvm/nvm.sh",
+    "NVM_DIR=~/.local/share/nvm rm ~/.local/share/nvm/nvm.sh.bak",
+    "NVM_DIR=~/.local/share/nvm . ~/.local/share/nvm/nvm.sh",
+    "NVM_DIR=~/.local/share/nvm . ~/.local/share/nvm/nvm.sh",
+    "NVM_DIR=~/.local/share/nvm nvm -v"
 ]

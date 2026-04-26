@@ -1,10 +1,10 @@
 [
     "mkdir -p ~/.local/bin",
     "wget -c -nc https://github.com/mrjackwills/oxker/releases/download/v0.13.1/oxker_linux_x86_64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/oxker_linux_x86_64.tar.gz",
-    "rm -rf ~/.local/src/oxker",
-    "mkdir -p ~/.local/src/oxker",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/oxker_linux_x86_64.tar.gz -C ~/.local/src",
+    "rm -rf ~/.local/share/oxker",
+    "mkdir -p ~/.local/share/oxker",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/oxker_linux_x86_64.tar.gz -C ~/.local/share",
     "rm ${XDG_CACHE_HOME:-/tmp}/oxker_linux_x86_64.tar.gz",
-    "ln -fs ~/.local/src/oxker ~/.local/bin/oxker",
+    "ln -fs ~/.local/share/oxker ~/.local/bin/oxker",
     "oxker --version"
 ]

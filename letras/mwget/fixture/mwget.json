@@ -1,12 +1,12 @@
 [
     "mkdir -p ~/.local/bin",
     "wget -c -nc https://github.com/rayylee/mwget/releases/download/v1.2.0/mwget-linux-x64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz",
-    "rm -rf ~/.local/src/mwget",
-    "mkdir -p ~/.local/src/mwget",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz -C ~/.local/src",
+    "rm -rf ~/.local/share/mwget",
+    "mkdir -p ~/.local/share/mwget",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz -C ~/.local/share",
     "rm ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz",
-    "ln -fs ~/.local/src/mwget/mwget ~/.local/bin/mwget",
-    "mv -T ~/.local/src/mwget-linux-x64 ~/.local/src/mwget",
-    "chmod +x ~/.local/src/mwget/mwget",
+    "ln -fs ~/.local/share/mwget/mwget ~/.local/bin/mwget",
+    "mv -T ~/.local/share/mwget-linux-x64 ~/.local/share/mwget",
+    "chmod +x ~/.local/share/mwget/mwget",
     "mwget --version"
 ]

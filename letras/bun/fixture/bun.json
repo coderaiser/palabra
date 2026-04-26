@@ -1,8 +1,8 @@
 [
     "mkdir -p ~/.local/bin",
-    "BUN_INSTALL=~/.local/src/bun bash -c \"$(curl -fsSL https://bun.sh/install)\" _ \"bun-v1.3.13\"",
-    "ln -fs ~/.local/src/bun/bin/bun ~/.local/bin/bun",
-    "ln -fs ~/.local/src/bun/bin/bunx ~/.local/bin/bunx",
-    "BUN_INSTALL=~/.local/src/bun bun -v",
-    "BUN_INSTALL=~/.local/src/bun bunx -v"
+    "BUN_INSTALL=~/.local/share/bun bash -c \"$(curl -fsSL https://bun.sh/install)\" _ \"bun-v1.3.13\"",
+    "ln -fs ~/.local/share/bun/bin/bun ~/.local/bin/bun",
+    "ln -fs ~/.local/share/bun/bin/bunx ~/.local/bin/bunx",
+    "BUN_INSTALL=~/.local/share/bun bun -v",
+    "BUN_INSTALL=~/.local/share/bun bunx -v"
 ]

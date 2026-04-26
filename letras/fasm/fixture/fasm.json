@@ -1,10 +1,10 @@
 [
     "mkdir -p ~/.local/bin",
     "wget -c -nc https://flatassembler.net/fasm-1.73.32.tgz -O ${XDG_CACHE_HOME:-/tmp}/fasm-1.73.32.tgz",
-    "rm -rf ~/.local/src/fasm",
-    "mkdir -p ~/.local/src/fasm",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/fasm-1.73.32.tgz -C ~/.local/src",
+    "rm -rf ~/.local/share/fasm",
+    "mkdir -p ~/.local/share/fasm",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/fasm-1.73.32.tgz -C ~/.local/share",
     "rm ${XDG_CACHE_HOME:-/tmp}/fasm-1.73.32.tgz",
-    "ln -fs ~/.local/src/fasm/fasm.x64 ~/.local/bin/fasm",
-    "fasm ~/.local/src/fasm/examples/elfexe/hello64.asm"
+    "ln -fs ~/.local/share/fasm/fasm.x64 ~/.local/bin/fasm",
+    "fasm ~/.local/share/fasm/examples/elfexe/hello64.asm"
 ]

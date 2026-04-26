@@ -1,14 +1,14 @@
 [
     "mkdir -p ~/.local/bin",
     "wget -c -nc https://github.com/VirusTotal/yara-x/releases/download/v1.14.0/yara-x-v1.14.0-x86_64-unknown-linux-gnu.gz -O ${XDG_CACHE_HOME:-/tmp}/yara-x-v1.14.0-x86_64-unknown-linux-gnu.gz",
-    "rm -rf ~/.local/src/yara",
-    "mkdir -p ~/.local/src/yara",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/yara-x-v1.14.0-x86_64-unknown-linux-gnu.gz -C ~/.local/src",
+    "rm -rf ~/.local/share/yara",
+    "mkdir -p ~/.local/share/yara",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/yara-x-v1.14.0-x86_64-unknown-linux-gnu.gz -C ~/.local/share",
     "rm ${XDG_CACHE_HOME:-/tmp}/yara-x-v1.14.0-x86_64-unknown-linux-gnu.gz",
-    "ln -fs ~/.local/src/yara/yr ~/.local/bin/yara",
-    "ln -fs ~/.local/src/yara/yr ~/.local/bin/yr",
-    "mkdir -p ~/.local/src/yara",
-    "mv ~/.local/src/yr ~/.local/src/yara/",
+    "ln -fs ~/.local/share/yara/yr ~/.local/bin/yara",
+    "ln -fs ~/.local/share/yara/yr ~/.local/bin/yr",
+    "mkdir -p ~/.local/share/yara",
+    "mv ~/.local/share/yr ~/.local/share/yara/",
     "yara --version",
     "yr --version"
 ]
