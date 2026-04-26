@@ -1,3 +1,11 @@
+2026.04.26, v2.6.1
+
+fix:
+- cf788b2 letras: gdu
+
+feature:
+- a9ee1d0 palabra: devDependencies: rm @putout/test
+
 2026.04.26, v2.6.0
 
 feature:
