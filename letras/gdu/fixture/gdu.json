@@ -3,10 +3,10 @@
     "wget -c https://github.com/dundee/gdu/releases/download/v5.35.0/gdu_linux_amd64.tgz -O ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz",
     "rm -rf ~/.local/share/gdu",
     "mkdir -p ~/.local/share/gdu",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz -C ~/.local/share",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz -C ~/.local/share/gdu",
     "rm ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz",
     "ln -fs ~/.local/share/gdu/gdu ~/.local/bin/gdu",
-    "mv -T ~/.local/share/gdu_linux_amd64 ~/.local/share/gdu || mv ~/.local/share/gdu_linux_amd64 ~/.local/share/gdu",
+    "mv -T ~/.local/share/gdu_linux_amd64 ~/.local/share/gdu",
     "chmod +x ~/.local/share/gdu/gdu",
     "gdu -v"
 ]
