@@ -6,7 +6,7 @@
     "tar xf ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz -C ~/.local/share",
     "rm ${XDG_CACHE_HOME:-/tmp}/gdu_linux_amd64.tgz",
     "ln -fs ~/.local/share/gdu/gdu ~/.local/bin/gdu",
-    "mv -T ~/.local/share/gdu_linux_amd64 ~/.local/share/gdu",
+    "mv -T ~/.local/share/gdu_linux_amd64 ~/.local/share/gdu || mv ~/.local/share/gdu_linux_amd64 ~/.local/share/gdu",
     "chmod +x ~/.local/share/gdu/gdu",
     "gdu -v"
 ]

@@ -6,7 +6,7 @@
     "tar xf ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz -C ~/.local/share",
     "rm ${XDG_CACHE_HOME:-/tmp}/mwget-linux-x64.tar.gz",
     "ln -fs ~/.local/share/mwget/mwget ~/.local/bin/mwget",
-    "mv -T ~/.local/share/mwget-linux-x64 ~/.local/share/mwget",
+    "mv -T ~/.local/share/mwget-linux-x64 ~/.local/share/mwget || mv ~/.local/share/mwget-linux-x64 ~/.local/share/mwget",
     "chmod +x ~/.local/share/mwget/mwget",
     "mwget --version"
 ]
