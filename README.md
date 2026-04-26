@@ -72,6 +72,12 @@ palabra l
 ]
 ```
 
+### `remove`
+
+```
+palabra r mwget
+```
+
 ## Env variables
 
 Use `PALABRA_DIR` or [`XDG_DATA_HOME`](https://specifications.freedesktop.org/basedir/latest/) to override default installation path `~/.local/share`.

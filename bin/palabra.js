@@ -9,6 +9,7 @@ import {instalar} from '../lib/cli/instalar.js';
 import info from '../package.json' with {
     type: 'json',
 };
+import {borrar} from '../lib/cli/borrar.js';
 
 const argv = process.argv.slice(2);
 const args = parseArgs(argv);
@@ -30,6 +31,8 @@ let cmd = '';
 
 if (!instrucciones || /^i(nstall)?$/.test(instrucciones)) {
     cmd = await instalar(args._, args);
+} else if (/^r(remove)?$/.test(instrucciones)) {
+    cmd = await borrar(args._, args);
 } else if (/^l(ist)?$/.test(instrucciones)) {
     const list = await readdir(new URL('../letras', import.meta.url));
     console.log(list.join(' '));
