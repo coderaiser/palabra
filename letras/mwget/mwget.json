@@ -4,6 +4,6 @@
     "url": "https://github.com/rayylee/mwget/releases/download/v{{ version }}/mwget-linux-x64.tar.gz",
     "test": "{{ name }} --version",
     "bin": "{{ name }}",
-    "rename": "mwget-linux-x64/{{ name }}-linux-x64",
+    "rename": "{{ name }}-linux-x64",
     "executable": true
 }
