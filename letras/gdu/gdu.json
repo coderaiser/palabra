@@ -1,9 +1,9 @@
 {
-  "name": "gdu",
-  "version": "5.35.0",
-  "url": "https://github.com/dundee/gdu/releases/download/v{{ version }}/gdu_linux_amd64.tgz",
-  "test": "gdu -v",
-  "executable": true,
-  "bin": "{{ name }}_linux_amd64",
-  "extractDirectory": "{{ directorio }}/{{ name }}"
+    "name": "gdu",
+    "version": "5.35.0",
+    "url": "https://github.com/dundee/gdu/releases/download/v{{ version }}/gdu_linux_amd64.tgz",
+    "test": "gdu -v",
+    "executable": true,
+    "bin": "{{ name }}_linux_amd64",
+    "extractDirectory": "{{ directorio }}/{{ name }}"
 }
