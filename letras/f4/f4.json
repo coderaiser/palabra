@@ -1,6 +1,6 @@
 {
   "name": "f4",
-  "url": "https://github.com/unxed/{{ name }} /releases/download/nightly/{{ name }}-linux-amd64.tar.gz",
+  "url": "https://github.com/unxed/{{ name }}/releases/download/nightly/{{ name }}-linux-amd64.tar.gz",
   "bin": "f4",
   "extractDirectory": "{{ directorio }}/{{ name }}"
 }
