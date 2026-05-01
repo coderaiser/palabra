@@ -1,0 +1,9 @@
+[
+    "mkdir -p ~/.local/bin",
+    "wget -c https://github.com/unxed/f4/releases/download/nightly/f4-linux-amd64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/f4-linux-amd64.tar.gz",
+    "rm -rf ~/.local/share/f4",
+    "mkdir -p ~/.local/share/f4",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/f4-linux-amd64.tar.gz -C ~/.local/share",
+    "rm ${XDG_CACHE_HOME:-/tmp}/f4-linux-amd64.tar.gz",
+    "ln -fs ~/.local/share/f4/bin/f4 ~/.local/bin/f4"
+]
