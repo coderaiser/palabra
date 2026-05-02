@@ -8,7 +8,7 @@
     "ln -fs ~/.local/share/nvim/bin/nvim ~/.local/bin/nvim",
     "mv -T ~/.local/share/nvim-linux-x86_64 ~/.local/share/nvim",
     "nvim -v",
-    "git clone https://github.com/NvChad/starter ${XDG_CONFIG_HOME:~.config}/nvim",
+    "git clone https://github.com/NvChad/starter ${XDG_CONFIG_HOME:~/.config}/nvim",
     "nvim --headless '+Lazy! sync' +qa",
     "ln -fs ~/.local/share/nvchad/bin/nvchad ~/.local/bin/nvchad"
 ]
