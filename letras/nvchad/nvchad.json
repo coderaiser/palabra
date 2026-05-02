@@ -1,0 +1,8 @@
+{
+  "name": "nvchad",
+  "dependencies": ["nvim"],
+  "beforeInstall": [
+    "git clone https://github.com/NvChad/starter ${XDG_CONFIG_HOME:~.config}/nvim",
+    "nvim --headless '+Lazy! sync' +qa"
+  ]
+}
