@@ -5,5 +5,6 @@
     "mkdir -p ~/.local/share/f4",
     "tar xf ${XDG_CACHE_HOME:-/tmp}/f4-linux-amd64.tar.gz -C ~/.local/share/f4",
     "rm ${XDG_CACHE_HOME:-/tmp}/f4-linux-amd64.tar.gz",
-    "ln -fs ~/.local/share/f4/f4 ~/.local/bin/f4"
+    "ln -fs ~/.local/share/f4/f4 ~/.local/bin/f4",
+    "f4 -v"
 ]
