@@ -6,6 +6,7 @@
         "**/*.config.*",
         "**/fixture",
         "**/cli",
+        "**/help.js",
         ".*.*",
         "eslint.config.js",
         "test",
