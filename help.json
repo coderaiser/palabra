@@ -2,5 +2,6 @@
     "-h, --help             ": "display this help and exit",
     "-v, --version          ": "output version information and exit",
     "i[nstall]              ": "install letra",
-    "r[emove]              ": "remove letra"
+    "r[emove]               ": "remove letra",
+    "l[ist]                 ": "list letras"
 }
