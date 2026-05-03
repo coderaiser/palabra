@@ -1,7 +1,7 @@
 {
-  "name": "f4",
-  "url": "https://github.com/unxed/{{ name }}/releases/download/nightly/{{ name }}-linux-amd64.tar.gz",
-  "bin": "f4",
-  "test": "f4 -v",
-  "extractDirectory": "{{ directorio }}/{{ name }}"
+    "name": "f4",
+    "url": "https://github.com/unxed/{{ name }}/releases/download/nightly/{{ name }}-linux-amd64.tar.gz",
+    "bin": "f4",
+    "test": "f4 -v",
+    "extractDirectory": "{{ directorio }}/{{ name }}"
 }

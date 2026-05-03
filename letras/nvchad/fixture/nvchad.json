@@ -1,6 +1,6 @@
 [
     "mkdir -p ~/.local/bin",
-    "wget -c https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-linux-x86_64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/nvim-linux-x86_64.tar.gz",
+    "wget -c https://github.com/neovim/neovim/releases/download/v0.12.2/nvim-linux-x86_64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/nvim-linux-x86_64.tar.gz",
     "rm -rf ~/.local/share/nvim",
     "mkdir -p ~/.local/share/nvim",
     "tar xf ${XDG_CACHE_HOME:-/tmp}/nvim-linux-x86_64.tar.gz -C ~/.local/share",
@@ -8,7 +8,8 @@
     "ln -fs ~/.local/share/nvim/bin/nvim ~/.local/bin/nvim",
     "mv -T ~/.local/share/nvim-linux-x86_64 ~/.local/share/nvim",
     "nvim -v",
-    "git clone https://github.com/NvChad/starter ${XDG_CONFIG_HOME:~/.config}/nvim",
+    "rm -rf ${XDG_CONFIG_HOME:-~/.config}/nvim",
+    "git clone https://github.com/NvChad/starter ${XDG_CONFIG_HOME:-~/.config}/nvim",
     "nvim --headless '+Lazy! sync' +qa",
     "ln -fs ~/.local/share/nvchad/bin/nvchad ~/.local/bin/nvchad"
 ]

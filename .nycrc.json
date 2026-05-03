@@ -4,9 +4,9 @@
     "exclude": [
         "**/*.spec.*",
         "**/*.config.*",
+        "**/help.js",
         "**/fixture",
         "**/cli",
-        "**/help.js",
         ".*.*",
         "eslint.config.js",
         "test",
