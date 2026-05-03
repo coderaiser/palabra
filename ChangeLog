@@ -1,3 +1,8 @@
+2026.05.03, v2.7.10
+
+feature:
+- 9b47fd0 palabra: letras: nvchad: rm nvm config before install
+
 2026.05.03, v2.7.9
 
 fix:
