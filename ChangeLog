@@ -1,3 +1,12 @@
+2026.05.19, v2.8.0
+
+fix:
+- 890af7d palabra: nvchad: dependencies
+
+feature:
+- 1605a12 palabra: supertape v13.2.0
+- 03091f3 letras: zero: add
+
 2026.05.03, v2.7.13
 
 fix:
