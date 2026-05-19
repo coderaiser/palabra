@@ -1,0 +1,6 @@
+[
+    "mkdir -p ~/.local/bin",
+    "bash -c \"$(curl -fsSL https://zerolang.ai/install.sh)\"",
+    "ln -fs ~/.local/share/zero/bin/zero ~/.local/bin/zero",
+    "zero --version"
+]

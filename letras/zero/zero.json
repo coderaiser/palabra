@@ -1,0 +1,7 @@
+{
+    "name": "zero",
+    "url": "https://zerolang.ai/install.sh",
+    "test": [
+        "zero --version"
+    ]
+}
