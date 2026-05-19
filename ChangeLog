@@ -1,3 +1,8 @@
+2026.05.19, v2.8.1
+
+fix:
+- 41f1322 letras: zero: ZERO_INSTALL_DIR
+
 2026.05.19, v2.8.0
 
 fix:
