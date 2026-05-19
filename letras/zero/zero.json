@@ -2,6 +2,9 @@
     "name": "zero",
     "version": "latest",
     "url": "https://zerolang.ai/install.sh",
+    "bin": {
+        "zero": "zero"
+    },
     "env": {
         "ZERO_INSTALL_DIR": "{{ directorio }}/zero",
         "ZERO_VERSION": "{{ version }}"
