@@ -23,9 +23,7 @@ npm i palabra -g
 
 ## Usage
 
-First thing you should do is:
-
-- ✅ create `.palabra.json` with soft you want to install, like this:
+First thing you should do is create `.palabra.json` with soft you want to install, like this:
 
 ```json
 {
