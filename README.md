@@ -56,21 +56,16 @@ palabra i nvim@0.11
 
 Default installation directory is `~/.local/src`.
 
-### `list`
+### `(l)ist`
 
 To list all packages that can be installed use `l`:
 
 ```
-palabra l
-[
-  'bun',  'deno',
-  'fasm', 'go',
-  'nvim', 'nvm',
-  'rust'
-]
+$ palabra l
+amber bin bun deno f4 fasm gdu go mwget node nvchad nvim nvm oxker rizin rust yara zero
 ```
 
-### `remove`
+### `(r)emove`
 
 ```
 palabra r mwget
