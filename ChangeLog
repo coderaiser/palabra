@@ -1,3 +1,8 @@
+2026.06.01, v2.9.2
+
+fix:
+- 33ad32f letras: rm haskell: broken install
+
 2026.06.01, v2.9.1
 
 fix:
