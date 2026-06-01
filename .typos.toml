@@ -1,2 +1,7 @@
 [files]
 extend-exclude= ["ChangeLog", "**/fixture", "bin/**", "help.json"]
+
+[default.extend-words]
+
+nstall = "nstall"
+ist = "ist"
