@@ -1,0 +1,9 @@
+[
+    "mkdir -p ~/.local/bin",
+    "wget -c https://github.com/crate-ci/typos/releases/download/v1.47.0/typos-v1.47.0-x86_64-unknown-linux-musl.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/typos-v1.47.0-x86_64-unknown-linux-musl.tar.gz",
+    "rm -rf ~/.local/share/typos",
+    "mkdir -p ~/.local/share/typos",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/typos-v1.47.0-x86_64-unknown-linux-musl.tar.gz -C ~/.local/share",
+    "rm ${XDG_CACHE_HOME:-/tmp}/typos-v1.47.0-x86_64-unknown-linux-musl.tar.gz",
+    "ln -fs ~/.local/share/typos/typos ~/.local/bin/typos"
+]
