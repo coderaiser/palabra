@@ -1,10 +1,8 @@
 {
     "name": "haskell",
     "url": "https://get-ghcup.haskell.org",
-    "version": "9.6.7",
     "env": {
-        "BOOTSTRAP_HASKELL_NONINTERACTIVE": "1",
-        "BOOTSTRAP_HASKELL_GHC_VERSION": "{{ version }}"
+        "BOOTSTRAP_HASKELL_NONINTERACTIVE": "1"
     },
     "execute": true,
     "hogar": "ghcup",
