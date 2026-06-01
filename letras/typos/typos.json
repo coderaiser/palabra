@@ -1,8 +1,11 @@
 {
-  "name": "typos",
-  "version": "1.47.0",
-  "url": "https://github.com/crate-ci/typos/releases/download/v{{ version }}/typos-v1.47.0-x86_64-unknown-linux-musl.tar.gz",
-  "bin": "{{ name }}",
-  "extractDirectory": "{{ directorio }}/{{ name }}",
-  "test": "{{ name }} --version"
+    "name": "typos",
+    "version": "1.47.0",
+    "url": {
+        "darwin": "https://github.com/crate-ci/typos/releases/download/v{{ version }}/typos-v1.47.0-aarch64-apple-darwin.tar.gz",
+        "linux": "https://github.com/crate-ci/typos/releases/download/v{{ version }}/typos-v1.47.0-x86_64-unknown-linux-musl.tar.gz"
+    },
+    "bin": "{{ name }}",
+    "extractDirectory": "{{ directorio }}/{{ name }}",
+    "test": "{{ name }} --version"
 }
