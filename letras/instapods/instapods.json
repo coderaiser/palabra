@@ -1,0 +1,7 @@
+{
+    "name": "instapods",
+    "url": "https://instapods.com/install.sh",
+    "test": [
+        "isntapods version"
+    ]
+}
