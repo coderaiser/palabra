@@ -1,3 +1,8 @@
+2026.06.01, v2.9.3
+
+fix:
+- dd6e33a rm instapods: no way to override installation path
+
 2026.06.01, v2.9.2
 
 fix:
