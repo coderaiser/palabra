@@ -2,12 +2,12 @@
     "name": "gh",
     "version": "2.93.0",
     "url": {
-        "linux": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_linux_amd64.tar.gz",
-        "darwin": "https://github.com/cli/cli/releases/download/v{{ version }}gh_{{ version }}_macOS_arm64.zip"
+        "darwin": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_macOS_arm64.zip",
+        "linux": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_linux_amd64.tar.gz"
     },
     "test": "{{ name }} version",
     "rename": [
-        "gh_{{ version }}_linux_amd64",
-        "gh_{{ version }}_macos_arm64"
+        "gh_{{ version }}_macOS_arm64",
+        "gh_{{ version }}_linux_amd64"
     ]
 }
