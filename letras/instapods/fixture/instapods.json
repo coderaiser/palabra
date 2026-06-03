@@ -1,6 +1,6 @@
 [
     "mkdir -p ~/.local/bin",
     "INSTAPODS_INSTALL=~/.local/share/instapods bash -c \"$(curl -fsSL https://instapods.com/install.sh)\"",
-    "ln -fs ~/.local/share/instapods/bin/instapods ~/.local/bin/instapods",
+    "ln -fs ~/.local/share/instapods/instapods ~/.local/bin/instapods",
     "INSTAPODS_INSTALL=~/.local/share/instapods instapods version"
 ]

@@ -4,6 +4,7 @@
     "env": {
         "INSTAPODS_INSTALL": "{{ directorio }}/instapods"
     },
+    "bin": "instapods",
     "test": [
         "instapods version"
     ]
