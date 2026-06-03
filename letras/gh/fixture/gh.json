@@ -6,5 +6,7 @@
     "tar xf ${XDG_CACHE_HOME:-/tmp}/gh_2.93.0_linux_amd64.tar.gz -C ~/.local/share",
     "rm ${XDG_CACHE_HOME:-/tmp}/gh_2.93.0_linux_amd64.tar.gz",
     "ln -fs ~/.local/share/gh/bin/gh ~/.local/bin/gh",
+    "mv -T ~/.local/share/gh_2.93.0_linux_amd64 ~/.local/share/gh",
+    "mv -T ~/.local/share/gh_2.93.0_macos_arm64 ~/.local/share/gh",
     "gh version"
 ]
