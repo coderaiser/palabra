@@ -1,0 +1,10 @@
+{
+    "name": "instapods",
+    "url": "https://instapods.com/install.sh",
+    "env": {
+        "INSTAPODS_INSTALL": "{{ directorio }}/instapods"
+    },
+    "test": [
+        "instapods version"
+    ]
+}
