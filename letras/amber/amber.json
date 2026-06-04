@@ -1,10 +1,13 @@
 {
     "name": "amber",
-    "version": "0.6.0",
+    "version": "0.6.0-alpha",
     "bin": {
         "amber": "amber"
     },
     "hogar": "",
     "test": "amber --version",
-    "url": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-linux-gnu-x86_64.tar.xz"
+    "url": {
+        "linux": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-linux-gnu-x86_64.tar.xz",
+        "darwin": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-macos-aarch64.tar.xz"
+    }
 }
