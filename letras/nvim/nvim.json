@@ -4,7 +4,7 @@
     "bin": {
         "nvim": "bin/nvim"
     },
-    "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-x86_64.tar.gz",
-    "rename": "nvim-linux-x86_64",
+    "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-{{ arch }}.tar.gz",
+    "rename": "nvim-linux-{{ arch }}",
     "test": "nvim -v"
 }
