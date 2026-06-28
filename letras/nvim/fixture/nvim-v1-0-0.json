@@ -1,12 +1,12 @@
 [
     "mkdir -p ~/.local/bin",
-    "wget -c https://github.com/neovim/neovim/releases/download/v1.0.0/nvim-linux-$(uname -m).tar.gz -O ${XDG_CACHE_HOME:-/tmp}/nvim-linux-$(uname -m).tar.gz",
+    "wget -c https://github.com/neovim/neovim/releases/download/v1.0.0/nvim-linux-arm64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/nvim-linux-arm64.tar.gz",
     "rm -rf ~/.local/share/nvim",
     "mkdir -p ~/.local/share/nvim",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/nvim-linux-$(uname -m).tar.gz -C ~/.local/share",
-    "rm ${XDG_CACHE_HOME:-/tmp}/nvim-linux-$(uname -m).tar.gz",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/nvim-linux-arm64.tar.gz -C ~/.local/share",
+    "rm ${XDG_CACHE_HOME:-/tmp}/nvim-linux-arm64.tar.gz",
     "ln -fs ~/.local/share/nvim/bin/nvim ~/.local/bin/nvim",
-    "[ -e ~/.local/share/nvim-linux-$(uname -m) ] && rm -rf ~/.local/share/nvim || true",
-    "[ -e ~/.local/share/nvim-linux-$(uname -m) ] && mv -f ~/.local/share/nvim-linux-$(uname -m) ~/.local/share/nvim || true",
+    "[ -e ~/.local/share/nvim-linux-arm64 ] && rm -rf ~/.local/share/nvim || true",
+    "[ -e ~/.local/share/nvim-linux-arm64 ] && mv -f ~/.local/share/nvim-linux-arm64 ~/.local/share/nvim || true",
     "nvim -v"
 ]

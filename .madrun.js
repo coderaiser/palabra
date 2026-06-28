@@ -1,6 +1,7 @@
 import {run, cutEnv} from 'madrun';
 
 const env = {
+    ARCH: 'arm64',
     PLATFORM: 'linux',
 };
 
