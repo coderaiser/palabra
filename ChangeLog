@@ -1,3 +1,9 @@
+2026.06.28, v2.16.0
+
+feature:
+- dc84c95 palabra: nvim: add support of arm
+- 18e5082 letras: nvim: v0.12.3
+
 2026.06.04, v2.15.2
 
 fix:

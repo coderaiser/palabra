@@ -1,4 +1,6 @@
 name: Install
+permissions:
+  contents: write
 on:
   - push
 jobs:
