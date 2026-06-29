@@ -1,3 +1,8 @@
+2026.06.29, v2.19.1
+
+fix:
+- 8b13ad0 palabra: letras: nvim: alias: arch: x64
+
 2026.06.29, v2.19.0
 
 feature:
