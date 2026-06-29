@@ -4,6 +4,11 @@
     "bin": {
         "nvim": "bin/nvim"
     },
+    "alias": {
+        "arch": {
+            "x64": "x86-64"
+        }
+    },
     "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-{{ arch }}.tar.gz",
     "rename": "nvim-linux-{{ arch }}",
     "test": "nvim -v"
