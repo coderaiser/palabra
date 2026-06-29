@@ -1,13 +1,18 @@
 {
     "name": "gh",
-    "version": "2.93.0",
+    "version": "2.95.0",
     "url": {
-        "darwin": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_macOS_arm64.zip",
-        "linux": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_linux_amd64.tar.gz"
+        "darwin": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_macOS_{{ arch }}.zip",
+        "linux": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_linux_{{ arch }}.tar.gz"
     },
     "test": "{{ name }} version",
+    "alias": {
+        "arch": {
+            "x64": "amd64"
+        }
+    },
     "rename": [
-        "gh_{{ version }}_macOS_arm64",
-        "gh_{{ version }}_linux_amd64"
+        "gh_{{ version }}_macOS_{{ arch }}",
+        "gh_{{ version }}_linux_{{ arch }}"
     ]
 }
