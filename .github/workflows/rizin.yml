@@ -6,7 +6,7 @@ on:
       - '*'
 
 env:
-  RIZIN_VERSION: 0.9.0
+  RIZIN_VERSION: 0.9.1
 
 jobs:
   build:
