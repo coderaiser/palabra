@@ -48,9 +48,9 @@ jobs:
 
       - name: Package
         run: |
-          tar cJf rizin-${{ env.RIZIN_VERSION }}-linux-${{ matrix.arch }}.tar.xz -C /tmp/rizin-out .
+          tar cJf rizin-v${{ env.RIZIN_VERSION }}-linux-${{ matrix.arch }}.tar.xz -C /tmp/rizin-out .
 
       - name: Create release and upload asset
         uses: softprops/action-gh-release@v2
         with:
-          files: rizin-${{ env.RIZIN_VERSION }}-linux-${{ matrix.arch }}.tar.xz
+          files: rizin-v${{ env.RIZIN_VERSION }}-linux-${{ matrix.arch }}.tar.xz
