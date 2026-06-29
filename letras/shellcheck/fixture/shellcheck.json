@@ -1,10 +1,10 @@
 [
     "mkdir -p ~/.local/bin",
-    "wget -c https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.x86_64.tar.xz -O ${XDG_CACHE_HOME:-/tmp}/shellcheck-v0.11.0.linux.x86_64.tar.xz",
+    "wget -c https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.aarch64.tar.xz -O ${XDG_CACHE_HOME:-/tmp}/shellcheck-v0.11.0.linux.aarch64.tar.xz",
     "rm -rf ~/.local/share/shellcheck",
     "mkdir -p ~/.local/share/shellcheck",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/shellcheck-v0.11.0.linux.x86_64.tar.xz -C ~/.local/share",
-    "rm ${XDG_CACHE_HOME:-/tmp}/shellcheck-v0.11.0.linux.x86_64.tar.xz",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/shellcheck-v0.11.0.linux.aarch64.tar.xz -C ~/.local/share",
+    "rm ${XDG_CACHE_HOME:-/tmp}/shellcheck-v0.11.0.linux.aarch64.tar.xz",
     "ln -fs ~/.local/share/shellcheck/shellcheck ~/.local/bin/shellcheck",
     "[ -e ~/.local/share/shellcheck-v0.11.0 ] && rm -rf ~/.local/share/shellcheck || true",
     "[ -e ~/.local/share/shellcheck-v0.11.0 ] && mv -f ~/.local/share/shellcheck-v0.11.0 ~/.local/share/shellcheck || true",

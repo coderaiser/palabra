@@ -1,8 +1,14 @@
 {
     "name": "shellcheck",
     "version": "0.11.0",
-    "url": "https://github.com/koalaman/shellcheck/releases/download/v{{ version }}/shellcheck-v{{ version }}.linux.x86_64.tar.xz",
+    "url": "https://github.com/koalaman/shellcheck/releases/download/v{{ version }}/shellcheck-v{{ version }}.linux.{{ arch }}.tar.xz",
     "bin": "{{ name }}",
     "test": "{{ name }} --version",
-    "rename": "shellcheck-v{{ version }}"
+    "rename": "shellcheck-v{{ version }}",
+    "alias": {
+        "arch": {
+            "x64": "x86_64",
+            "arm64": "aarch64"
+        }
+    }
 }
