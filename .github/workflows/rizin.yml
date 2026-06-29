@@ -27,7 +27,8 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y meson ninja-build pkg-config
+          sudo apt-get install -y meson ninja-build pkg-config python3-pip
+          pip install meson --break-system-packages
 
       - name: Clone rizin
         run: |
@@ -37,10 +38,11 @@ jobs:
         run: |
           cd rizin
           meson setup build \
-            --prefix=/tmp/rizin-out \
             --buildtype=release \
             --default-library=static \
-            -Dstatic=true
+            --prefix=/tmp/rizin-out \
+            -Dstatic_runtime=true \
+            -Dblob=true
           ninja -C build
           ninja -C build install
 
