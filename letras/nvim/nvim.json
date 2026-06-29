@@ -6,7 +6,7 @@
     },
     "alias": {
         "arch": {
-            "x64": "x86-64"
+            "x64": "x86_64"
         }
     },
     "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-{{ arch }}.tar.gz",
