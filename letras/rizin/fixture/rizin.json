@@ -1,10 +1,10 @@
 [
     "mkdir -p ~/.local/bin",
-    "wget -c https://github.com/rizinorg/rizin/releases/download/v0.8.2/rizin-v0.8.2-static-x86_64.tar.xz -O ${XDG_CACHE_HOME:-/tmp}/rizin-v0.8.2-static-x86_64.tar.xz",
+    "wget -c https://github.com/coderaiser/palabra/releases/download/v2.19.2/rizin-v0.9.0-linux-aarch64.tar.xz -O ${XDG_CACHE_HOME:-/tmp}/rizin-v0.9.0-linux-aarch64.tar.xz",
     "rm -rf ~/.local/share/rizin",
     "mkdir -p ~/.local/share/rizin",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/rizin-v0.8.2-static-x86_64.tar.xz -C ~/.local/share/rizin",
-    "rm ${XDG_CACHE_HOME:-/tmp}/rizin-v0.8.2-static-x86_64.tar.xz",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/rizin-v0.9.0-linux-aarch64.tar.xz -C ~/.local/share/rizin",
+    "rm ${XDG_CACHE_HOME:-/tmp}/rizin-v0.9.0-linux-aarch64.tar.xz",
     "ln -fs ~/.local/share/rizin/bin/rizin ~/.local/bin/rizin",
     "ln -fs ~/.local/share/rizin/bin/rz-asm ~/.local/bin/rz-asm",
     "ln -fs ~/.local/share/rizin/bin/rz-ax ~/.local/bin/rz-ax",
