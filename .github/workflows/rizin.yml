@@ -1,4 +1,4 @@
-name: Build rizin
+name: 'Build: rizin'
 
 on:
   push:
