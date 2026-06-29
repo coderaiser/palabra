@@ -1,6 +1,6 @@
 [
     "mkdir -p ~/.local/bin",
-    "wget -c https://github.com/coderaiser/palabra/releases/download/v2.19.7/rizin-v0.9.1-linux-aarch64.tar.xz -O ${XDG_CACHE_HOME:-/tmp}/rizin-v0.9.1-linux-aarch64.tar.xz",
+    "wget -c https://github.com/coderaiser/palabra/releases/download/v2.19.8/rizin-v0.9.1-linux-aarch64.tar.xz -O ${XDG_CACHE_HOME:-/tmp}/rizin-v0.9.1-linux-aarch64.tar.xz",
     "rm -rf ~/.local/share/rizin",
     "mkdir -p ~/.local/share/rizin",
     "tar xf ${XDG_CACHE_HOME:-/tmp}/rizin-v0.9.1-linux-aarch64.tar.xz -C ~/.local/share/rizin",

@@ -1,7 +1,7 @@
 {
     "name": "rizin",
     "version": "0.9.1",
-    "url": "https://github.com/coderaiser/palabra/releases/download/v2.19.7/rizin-v{{ version }}-linux-{{ arch }}.tar.xz",
+    "url": "https://github.com/coderaiser/palabra/releases/download/v2.19.8/rizin-v{{ version }}-linux-{{ arch }}.tar.xz",
     "extractDirectory": "{{ directorio }}/{{ name }}",
     "bin": {
         "rizin": "bin/rizin",
