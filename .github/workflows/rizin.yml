@@ -1,4 +1,4 @@
-name: rizin
+name: Build rizin
 
 on:
   push:
@@ -10,9 +10,6 @@ env:
 
 jobs:
   build:
-    permissions:
-      contents: write
-      
     strategy:
       matrix:
         include:
@@ -22,6 +19,9 @@ jobs:
             arch: aarch64
 
     runs-on: ${{ matrix.runner }}
+
+    permissions:
+      contents: write
 
     steps:
       - name: Install dependencies
@@ -36,14 +36,17 @@ jobs:
       - name: Build
         run: |
           cd rizin
-          meson setup build --prefix=/tmp/rizin-out --buildtype=release
+          meson setup build \
+            --prefix=/tmp/rizin-out \
+            --buildtype=release \
+            --default-library=static \
+            -Dstatic=true
           ninja -C build
           ninja -C build install
 
       - name: Package
         run: |
           tar cJf rizin-${{ env.RIZIN_VERSION }}-linux-${{ matrix.arch }}.tar.xz -C /tmp/rizin-out .
-
 
       - name: Create release and upload asset
         uses: softprops/action-gh-release@v2
