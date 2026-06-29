@@ -1,9 +1,9 @@
 {
     "name": "mwget",
     "version": "1.2.0",
-    "url": "https://github.com/rayylee/mwget/releases/download/v{{ version }}/mwget-linux-x64.tar.gz",
+    "url": "https://github.com/rayylee/mwget/releases/download/v{{ version }}/mwget-linux-{{ arch }}.tar.gz",
     "test": "{{ name }} --version",
     "bin": "{{ name }}",
-    "rename": "{{ name }}-linux-x64",
+    "rename": "{{ name }}-linux-{{ arch }}",
     "executable": true
 }

@@ -1,6 +1,6 @@
 {
     "name": "nvm",
-    "version": "0.40.4",
+    "version": "0.40.5",
     "url": "https://raw.githubusercontent.com/nvm-sh/nvm/v{{ version }}/install.sh",
     "env": {
         "NVM_DIR": "{{ directorio }}/nvm"
