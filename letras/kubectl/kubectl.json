@@ -1,16 +1,16 @@
 {
-  "name": "kubectl",
-  "version": "1.36.0",
-  "bin": "{{ name }}",
-  "executable": true,
-  "preparado": true,
-  "test": [
-    "{{ name }} --version"
-  ],
-  "alias": {
-    "arch": {
-      "x64": "amd64"
-    }
-  },
-  "url": "https://dl.k8s.io/release/v{{ version }}/bin/{{ platform }}/{{ arch }}/kubectl"
+    "name": "kubectl",
+    "version": "1.36.0",
+    "bin": "{{ name }}",
+    "executable": true,
+    "preparado": true,
+    "test": [
+        "{{ name }} --version"
+    ],
+    "alias": {
+        "arch": {
+            "x64": "amd64"
+        }
+    },
+    "url": "https://dl.k8s.io/release/v{{ version }}/bin/{{ platform }}/{{ arch }}/kubectl"
 }
