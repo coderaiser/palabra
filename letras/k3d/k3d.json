@@ -3,13 +3,13 @@
     "url": "https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh",
     "bin": "{{ name }}",
     "env": {
-        "K3D_INSTALL_DIR": "{{ directorio }}/k3d",
+        "K3D_INSTALL_DIR": "{{ directorio }}/{{ name }}",
         "USE_SUDO": "false"
     },
     "test": [
         "{{ name }} -v"
     ],
-    "commands": [
+    "beforeInstall": [
         "mkdir -p {{ directorio }}/{{ name }}"
     ]
 }
