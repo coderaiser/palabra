@@ -5,7 +5,7 @@
     "executable": true,
     "preparado": true,
     "test": [
-        "{{ name }} --version"
+        "{{ name }} version"
     ],
     "alias": {
         "arch": {
