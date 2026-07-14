@@ -1,3 +1,11 @@
+2026.07.14, v2.21.0
+
+fix:
+- 2682740 letras: k3d: version
+
+feature:
+- 236f713 letras: kubectl: add
+
 2026.07.14, v2.20.8
 
 fix:
