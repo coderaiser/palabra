@@ -1,13 +1,12 @@
-name: 'Build rizin'
-
+name: Build rizin
+permissions:
+  contents: write
 on:
   push:
     tags:
-      - '*'
-
+      - "*"
 env:
   RIZIN_VERSION: 0.9.1
-
 jobs:
   build:
     strategy:
@@ -17,25 +16,20 @@ jobs:
             arch: amd64
           - runner: ubuntu-24.04-arm
             arch: aarch64
-
     runs-on: ${{ matrix.runner }}
-
     permissions:
       contents: write
-
     steps:
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y meson ninja-build pkg-config python3-pip
           pip install meson --break-system-packages
-
       - name: Clone rizin
         run: |
           git clone --depth 1 --branch v${{ env.RIZIN_VERSION }} https://github.com/rizinorg/rizin.git
           cd rizin
           meson subprojects download
-
       - name: Build
         run: |
           cd rizin
@@ -47,11 +41,9 @@ jobs:
             -Dblob=true
           ninja -C build
           ninja -C build install
-
       - name: Package
         run: |
           tar cJf rizin-v${{ env.RIZIN_VERSION }}-linux-${{ matrix.arch }}.tar.xz -C /tmp/rizin-out .
-
       - name: Create release and upload asset
         uses: softprops/action-gh-release@v2
         with:

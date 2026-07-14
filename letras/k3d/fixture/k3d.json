@@ -2,5 +2,6 @@
     "mkdir -p ~/.local/bin",
     "K3D_INSTALL_DIR=~/.local/share/k3d USE_SUDO=true bash -c \"$(curl -fsSL https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh)\"",
     "ln -fs ~/.local/share/k3d/k3d ~/.local/bin/k3d",
+    "K3D_INSTALL_DIR=~/.local/share/k3d USE_SUDO=true mkdir -p ~/.local/share/k3d",
     "K3D_INSTALL_DIR=~/.local/share/k3d USE_SUDO=true k3d -v"
 ]
