@@ -6,6 +6,7 @@
         "K3D_INSTALL_DIR": "{{ directorio }}/{{ name }}",
         "USE_SUDO": "false"
     },
+    "executable": true,
     "test": [
         "{{ name }} -v"
     ],
