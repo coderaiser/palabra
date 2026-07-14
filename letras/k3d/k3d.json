@@ -2,7 +2,7 @@
   "name": "k3d",
   "url": "https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh",
   "env": {
-    "K3D_INSTALL_DIR": "{{ directorio }}/k3d",
+    "K3D_INSTALL_DIR": "{{ directorio }}",
     "USE_SUDO": "true"
   },
   "bin": "k3d",
