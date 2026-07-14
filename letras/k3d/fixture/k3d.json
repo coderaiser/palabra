@@ -6,5 +6,5 @@
     "[ -e ~/.local/share/k3d-linux-arm64 ] && rm -rf ~/.local/share/k3d || true",
     "[ -e ~/.local/share/k3d-linux-arm64 ] && mv -f ~/.local/share/k3d-linux-arm64 ~/.local/share/k3d || true",
     "chmod +x ~/.local/share/k3d/k3d",
-    "k3d -v"
+    "k3d --version"
 ]
