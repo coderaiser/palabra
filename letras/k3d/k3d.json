@@ -4,7 +4,7 @@
     "bin": "{{ name }}",
     "env": {
         "K3D_INSTALL_DIR": "{{ directorio }}/k3d",
-        "USE_SUDO": "true"
+        "USE_SUDO": "false"
     },
     "test": [
         "{{ name }} -v"
