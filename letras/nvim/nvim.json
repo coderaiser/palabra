@@ -9,7 +9,7 @@
             "x64": "x86_64"
         }
     },
-    "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-linux-{{ arch }}.tar.gz",
-    "rename": "nvim-linux-{{ arch }}",
+    "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-{{ platform }}-{{ arch }}.tar.gz",
+    "rename": "nvim-{{ platform }}-{{ arch }}",
     "test": "nvim -v"
 }

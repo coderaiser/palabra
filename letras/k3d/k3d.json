@@ -3,6 +3,7 @@
     "version": "5.9.0",
     "bin": "{{ name }}",
     "executable": true,
+    "preparado": true,
     "test": [
         "{{ name }} -v"
     ],
@@ -11,9 +12,6 @@
             "x64": "amd64"
         }
     },
-    "url": {
-        "darwin": "https://github.com/k3d-io/k3d/releases/download/v{{ version }}/k3d-darwin-{{ arch }}",
-        "linux": "https://github.com/k3d-io/k3d/releases/download/v{{ version }}/k3d-linux-{{ arch }}"
-    },
+    "url": "https://github.com/k3d-io/k3d/releases/download/v{{ version }}/{{ name }}-{{ platform }}-{{ arch }}",
     "rename": "{{ name }}-{{ platform }}-{{ arch }}"
 }
