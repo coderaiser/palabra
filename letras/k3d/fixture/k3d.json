@@ -1,7 +1,9 @@
 [
     "mkdir -p ~/.local/bin",
-    "K3D_INSTALL_DIR=~/.local/share/k3d USE_SUDO=true bash -c \"$(curl -fsSL https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh)\"",
+    "bash -c \"$(curl -fsSL https://github.com/k3d-io/k3d/releases/download/v5.9.0/k3d-linux-arm64)\"",
     "ln -fs ~/.local/share/k3d/k3d ~/.local/bin/k3d",
-    "K3D_INSTALL_DIR=~/.local/share/k3d USE_SUDO=true mkdir -p ~/.local/share/k3d",
-    "K3D_INSTALL_DIR=~/.local/share/k3d USE_SUDO=true k3d -v"
+    "[ -e ~/.local/share/k3d-linux-arm64 ] && rm -rf ~/.local/share/k3d || true",
+    "[ -e ~/.local/share/k3d-linux-arm64 ] && mv -f ~/.local/share/k3d-linux-arm64 ~/.local/share/k3d || true",
+    "chmod +x ~/.local/share/k3d/k3d",
+    "k3d -v"
 ]

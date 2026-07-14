@@ -1,16 +1,19 @@
 {
     "name": "k3d",
-    "url": "https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh",
+    "version": "5.9.0",
     "bin": "{{ name }}",
-    "env": {
-        "K3D_INSTALL_DIR": "{{ directorio }}/{{ name }}",
-        "USE_SUDO": "false"
-    },
     "executable": true,
     "test": [
         "{{ name }} -v"
     ],
-    "beforeInstall": [
-        "mkdir -p {{ directorio }}/{{ name }}"
-    ]
+    "alias": {
+        "arch": {
+            "x64": "amd64"
+        }
+    },
+    "url": {
+        "darwin": "https://github.com/k3d-io/k3d/releases/download/v{{ version }}/k3d-darwin-{{ arch }}",
+        "linux": "https://github.com/k3d-io/k3d/releases/download/v{{ version }}/k3d-linux-{{ arch }}"
+    },
+    "rename": "{{ name }}-{{ platform }}-{{ arch }}"
 }
