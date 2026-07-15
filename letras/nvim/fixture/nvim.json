@@ -8,5 +8,7 @@
     "ln -fs ~/.local/share/nvim/bin/nvim ~/.local/bin/nvim",
     "[ -e ~/.local/share/nvim-linux-arm64 ] && rm -rf ~/.local/share/nvim || true",
     "[ -e ~/.local/share/nvim-linux-arm64 ] && mv -f ~/.local/share/nvim-linux-arm64 ~/.local/share/nvim || true",
+    "mkdir -p ~/.config/nvim",
+    "grep -qF \"source ~/.vimrc\" ~/.config/nvim/init.vim 2>/dev/null || printf \"%s\\n\" \"if filereadable(expand('~/.vimrc'))\" \"    source ~/.vimrc\" \"endif\" >> ~/.config/nvim/init.vim",
     "nvim -v"
 ]

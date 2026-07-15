@@ -11,5 +11,9 @@
     },
     "url": "https://github.com/neovim/neovim/releases/download/v{{ version }}/nvim-{{ platform }}-{{ arch }}.tar.gz",
     "rename": "nvim-{{ platform }}-{{ arch }}",
-    "test": "nvim -v"
+    "test": "nvim -v",
+    "commands": [
+        "mkdir -p ~/.config/nvim",
+        "grep -qF \"source ~/.vimrc\" ~/.config/nvim/init.vim 2>/dev/null || printf \"%s\\n\" \"if filereadable(expand('~/.vimrc'))\" \"    source ~/.vimrc\" \"endif\" >> ~/.config/nvim/init.vim"
+    ]
 }
