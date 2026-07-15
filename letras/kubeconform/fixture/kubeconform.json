@@ -1,0 +1,10 @@
+[
+    "mkdir -p ~/.local/bin",
+    "wget -c https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-linux-arm64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/kubeconform-linux-arm64.tar.gz",
+    "rm -rf ~/.local/share/kubeconform",
+    "mkdir -p ~/.local/share/kubeconform",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/kubeconform-linux-arm64.tar.gz -C ~/.local/share",
+    "rm ${XDG_CACHE_HOME:-/tmp}/kubeconform-linux-arm64.tar.gz",
+    "ln -fs ~/.local/share/kubeconform ~/.local/bin/kubeconform",
+    "kubeconform -v"
+]

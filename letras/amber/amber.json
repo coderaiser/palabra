@@ -6,8 +6,15 @@
     },
     "hogar": "",
     "test": "amber --version",
-    "url": {
-        "linux": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-linux-gnu-x86_64.tar.xz",
-        "darwin": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-macos-aarch64.tar.xz"
-    }
+    "alias": {
+        "arch": {
+            "arm64": "aarch64",
+            "x64": "x86_64"
+        },
+        "platform": {
+            "darwin": "macos",
+            "linux": "linux-gnu"
+        }
+    },
+    "url": "https://github.com/amber-lang/amber/releases/download/{{ version }}/amber-{{ platform }}-{{ arch }}.tar.xz"
 }
