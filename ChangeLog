@@ -1,3 +1,9 @@
+2026.07.15, v2.21.2
+
+feature:
+- ed00854 letras: nvim: v0.12.4
+- e32f9be nvim: read ~/.vimrc
+
 2026.07.14, v2.21.1
 
 fix:
