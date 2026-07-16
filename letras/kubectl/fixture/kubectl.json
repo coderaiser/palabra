@@ -4,5 +4,5 @@
     "wget https://dl.k8s.io/release/v1.36.0/bin/linux/arm64/kubectl -O ~/.local/share/kubectl/kubectl",
     "ln -fs ~/.local/share/kubectl/kubectl ~/.local/bin/kubectl",
     "chmod +x ~/.local/share/kubectl/kubectl",
-    "kubectl version"
+    "kubectl version --client"
 ]
