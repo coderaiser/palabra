@@ -1,9 +1,6 @@
 {
     "name": "kustomize",
     "version": "5.8.1",
-    "bin": "{{ name }}",
-    "executable": true,
-    "preparado": true,
     "test": [
         "{{ name }} version"
     ],
@@ -12,5 +9,6 @@
             "x64": "amd64"
         }
     },
-    "url": "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv{{ version }}/kustomize_v{{ version }}_{{ platform }}_{{ arch }}.tar.gz"
+    "url": "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv{{ version }}/kustomize_v{{ version }}_{{ platform }}_{{ arch }}.tar.gz",
+    "type": "root-archive"
 }

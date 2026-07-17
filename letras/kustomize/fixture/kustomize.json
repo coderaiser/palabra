@@ -1,8 +1,10 @@
 [
     "mkdir -p ~/.local/bin",
+    "wget -c https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv5.8.1/kustomize_v5.8.1_linux_arm64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/kustomize_v5.8.1_linux_arm64.tar.gz",
+    "rm -rf ~/.local/share/kustomize",
     "mkdir -p ~/.local/share/kustomize",
-    "wget https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv5.8.1/kustomize_v5.8.1_linux_arm64.tar.gz -O ~/.local/share/kustomize/kustomize",
-    "ln -fs ~/.local/share/kustomize/kustomize ~/.local/bin/kustomize",
-    "chmod +x ~/.local/share/kustomize/kustomize",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/kustomize_v5.8.1_linux_arm64.tar.gz -C ~/.local/share",
+    "rm ${XDG_CACHE_HOME:-/tmp}/kustomize_v5.8.1_linux_arm64.tar.gz",
+    "ln -fs ~/.local/share/kustomize ~/.local/bin/kustomize",
     "kustomize version"
 ]
