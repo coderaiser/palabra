@@ -1,3 +1,8 @@
+2026.07.23, v2.24.1
+
+fix:
+- 07516e1 pgsqlite: arch: linux
+
 2026.07.22, v2.24.0
 
 feature:
