@@ -1,15 +1,15 @@
 {
-  "name": "nub",
-  "url": "https://nubjs.com/install.sh",
-  "env": {
-    "NUB_INSTALL_DIR": "{{ directorio }}/nub"
-  },
-  "test": [
-    "nub -v",
-    "nubx -v"
-  ],
-  "bin": {
-    "nub": "bin/nub",
-    "nubx": "bin/nubx"
-  }
+    "name": "nub",
+    "url": "https://nubjs.com/install.sh",
+    "env": {
+        "NUB_INSTALL_DIR": "{{ directorio }}/nub"
+    },
+    "test": [
+        "nub -v",
+        "nubx -v"
+    ],
+    "bin": {
+        "nub": "bin/nub",
+        "nubx": "bin/nubx"
+    }
 }
