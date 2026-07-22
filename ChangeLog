@@ -1,3 +1,12 @@
+2026.07.23, v2.24.2
+
+fix:
+- 56eb0da letras: nub: install
+- 02855c9 scripts: no bin: root-archive
+
+feature:
+- a9f9c53 letras: nub: add
+
 2026.07.23, v2.24.1
 
 fix:
