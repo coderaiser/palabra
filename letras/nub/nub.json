@@ -1,6 +1,15 @@
 {
-    "name": "nub",
-    "version": "0.4.13",
-    "url": "https://github.com/nubjs/nub/releases/download/v{{ version }}/nub-{{ platform }}-{{ arch }}.tar.gz",
-    "test": "{{ name }} --version"
+  "name": "nub",
+  "url": "https://nubjs.com/install.sh",
+  "env": {
+    "NUB_INSTALL_DIR": "{{ directorio }}/nub"
+  },
+  "test": [
+    "nub -v",
+    "nubx -v"
+  ],
+  "bin": {
+    "nub": "bin/nub",
+    "nubx": "bin/nubx"
+  }
 }
