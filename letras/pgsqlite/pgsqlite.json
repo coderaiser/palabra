@@ -5,6 +5,11 @@
         "linux": "https://github.com/erans/pgsqlite/releases/download/v{{ version }}/pgsqlite-linux-{{ arch }}.tar.gz",
         "darwin": "https://github.com/erans/pgsqlite/releases/download/v{{ version }}/pgsqlite-macos-apple-silicon.tar.gz"
     },
+    "alias": {
+        "arch": {
+            "x64": "amd64"
+        }
+    },
     "test": "{{ name }} --version",
     "type": "root-archive"
 }
