@@ -14,6 +14,11 @@ for (const name of names) {
         },
     });
     
+    if (letra.type === 'root-archive') {
+        bins.push(`type ${letra.name}`);
+        continue;
+    }
+    
     if (!letra.bin)
         continue;
     
