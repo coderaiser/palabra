@@ -1,0 +1,10 @@
+{
+    "name": "pgsqlite",
+    "version": "0.0.22",
+    "url": {
+        "linux": "https://github.com/erans/pgsqlite/releases/download/v{{ version }}/pgsqlite-linux-{{ arch }}.tar.gz",
+        "darwin": "https://github.com/erans/pgsqlite/releases/download/v{{ version }}/pgsqlite-macos-apple-silicon.tar.gz"
+    },
+    "test": "{{ name }} --version",
+    "type": "root-archive"
+}

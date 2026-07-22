@@ -1,7 +1,7 @@
 {
     "name": "shellcheck",
     "version": "0.11.0",
-    "url": "https://github.com/koalaman/shellcheck/releases/download/v{{ version }}/shellcheck-v{{ version }}.linux.{{ arch }}.tar.xz",
+    "url": "https://github.com/koalaman/shellcheck/releases/download/v{{ version }}/shellcheck-v{{ version }}.{{ platform }}.{{ arch }}.tar.xz",
     "bin": "{{ name }}",
     "test": "{{ name }} --version",
     "rename": "shellcheck-v{{ version }}",
