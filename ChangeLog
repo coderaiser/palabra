@@ -1,3 +1,8 @@
+2026.07.22, v2.24.0
+
+feature:
+- 5fc93d5 letras: pgsqlite: add
+
 2026.07.17, v2.23.1
 
 fix:
