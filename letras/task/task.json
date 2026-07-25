@@ -1,0 +1,8 @@
+{
+  "name": "task",
+  "version": "3.52.0",
+  "bin": "task",
+  "url": "https://github.com/go-task/task/releases/download/v{{ version }}/task_{{ platform }}_{{ arch }}.tar.gz",
+  "test": "{{ name }} --version",
+  "extractDirectory": "{{ directorio }}/{{ name }}"
+}
