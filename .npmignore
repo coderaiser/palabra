@@ -9,5 +9,6 @@ eslint.config.*
 
 test
 coverage
-!letras/coverage
 fixture
+
+!letras/coverage
