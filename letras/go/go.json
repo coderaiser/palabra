@@ -5,6 +5,6 @@
         "go": "bin/go",
         "gofmt": "bin/gofmt"
     },
-    "url": "https://go.dev/dl/go{{ version }}.{{ platform }}-amd64.tar.gz",
+    "url": "https://go.dev/dl/go{{ version }}.{{ platform }}-{{ arch }}.tar.gz",
     "test": "go version"
 }
