@@ -27,7 +27,7 @@
     "report": "madrun report"
   },
   "dependencies": {
-    "execa": "^9.6.1",
+    "execa": "^10.0.0",
     "rendy": "^5.0.2",
     "try-to-catch": "^4.0.5",
     "yargs-parser": "^22.0.0"
