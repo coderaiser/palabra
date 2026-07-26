@@ -1,3 +1,8 @@
+2026.07.26, v2.27.1
+
+fix:
+- 0329378 letras: coverage: npmignore
+
 2026.07.26, v2.27.0
 
 feature:
