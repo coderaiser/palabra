@@ -1,3 +1,11 @@
+2026.07.26, v2.26.1
+
+fix:
+- 39ef408 palabra: letras: golangci-lint: arch
+
+feature:
+- 12a81a0 letras: golangci-lint: add
+
 2026.07.26, v2.26.0
 
 feature:
