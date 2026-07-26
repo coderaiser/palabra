@@ -3,7 +3,8 @@
     "wget -c https://github.com/go-task/task/releases/download/v3.52.0/task_linux_arm64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/task_linux_arm64.tar.gz",
     "rm -rf ~/.local/share/task",
     "mkdir -p ~/.local/share/task",
-    "tar xf ${XDG_CACHE_HOME:-/tmp}/task_linux_arm64.tar.gz -C ~/.local/share",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/task_linux_arm64.tar.gz -C ~/.local/share/task",
     "rm ${XDG_CACHE_HOME:-/tmp}/task_linux_arm64.tar.gz",
-    "ln -fs ~/.local/share/task/task ~/.local/bin/task"
+    "ln -fs ~/.local/share/task/task ~/.local/bin/task",
+    "task --version"
 ]
