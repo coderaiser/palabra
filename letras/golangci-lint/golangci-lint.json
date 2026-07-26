@@ -1,13 +1,13 @@
 {
-  "name": "golangci-lint",
-  "version": "2.12.2",
-  "url": "https://github.com/golangci/{{ name }}/releases/download/v{{ version }}/golangci-lint-{{ version }}-{{ platform }}-{{ arch }}.tar.gz",
-  "bin": "golangci-lint",
-  "alias": {
-    "arc": {
-      "x64": "amd64"
-    }
-  },
-  "rename": "{{ name }}-{{ version }}-{{ platform }}-{{ arch }}",
-  "test": "golangci-lint --version"
+    "name": "golangci-lint",
+    "version": "2.12.2",
+    "url": "https://github.com/golangci/{{ name }}/releases/download/v{{ version }}/golangci-lint-{{ version }}-{{ platform }}-{{ arch }}.tar.gz",
+    "bin": "golangci-lint",
+    "alias": {
+        "arc": {
+            "x64": "amd64"
+        }
+    },
+    "rename": "{{ name }}-{{ version }}-{{ platform }}-{{ arch }}",
+    "test": "golangci-lint --version"
 }
