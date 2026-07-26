@@ -1,3 +1,11 @@
+2026.07.26, v2.25.1
+
+fix:
+- 8148ca5 letra: task: arm64
+
+feature:
+- 0c57e65 palabra: execa v10.0.0
+
 2026.07.25, v2.25.0
 
 feature:
