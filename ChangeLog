@@ -1,3 +1,8 @@
+2026.07.26, v2.26.0
+
+feature:
+- 50a1532 letras: golangci-lint: add
+
 2026.07.26, v2.25.2
 
 fix:
