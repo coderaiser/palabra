@@ -1,7 +1,7 @@
 [
     "mkdir -p ~/.local/bin",
     "mkdir -p ~/.local/share/tape",
-    "wget https://github.com/coderaiser/go-tape/releases/download/v1.0.7/tape_1.0.7_linux_arm64 -O ~/.local/share/tape/tape",
+    "wget https://github.com/coderaiser/go-tape/releases/download/v1.0.8/tape_1.0.8_linux_arm64 -O ~/.local/share/tape/tape",
     "ln -fs ~/.local/share/tape/tape ~/.local/bin/tape",
     "[ -e ~/.local/share/tape-linux-arm64 ] && rm -rf ~/.local/share/tape || true",
     "[ -e ~/.local/share/tape-linux-arm64 ] && mv -f ~/.local/share/tape-linux-arm64 ~/.local/share/tape || true",
