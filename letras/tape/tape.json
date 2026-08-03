@@ -1,6 +1,6 @@
 {
     "name": "tape",
-    "version": "1.0.10",
+    "version": "1.0.13",
     "bin": "{{ name }}",
     "executable": true,
     "preparado": true,
