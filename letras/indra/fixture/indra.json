@@ -1,0 +1,10 @@
+[
+    "mkdir -p ~/.local/bin",
+    "mkdir -p ~/.local/share/indra",
+    "wget https://github.com/coderaiser/go-indra/releases/download/v1.0.1/indra_1.0.1_linux_arm64 -O ~/.local/share/indra/indra",
+    "ln -fs ~/.local/share/indra/indra ~/.local/bin/indra",
+    "[ -e ~/.local/share/indra-linux-arm64 ] && rm -rf ~/.local/share/indra || true",
+    "[ -e ~/.local/share/indra-linux-arm64 ] && mv -f ~/.local/share/indra-linux-arm64 ~/.local/share/indra || true",
+    "chmod +x ~/.local/share/indra/indra",
+    "indra --version"
+]
