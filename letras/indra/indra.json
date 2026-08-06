@@ -12,6 +12,6 @@
             "x64": "amd64"
         }
     },
-    "url": "https://github.com/coderaiser/go-{{ name }}/releases/download/v{{ version }}/{{ name }}_{{ version }}_{{ platform }}_{{ arch }}",
+    "url": "https://github.com/coderaiser/{{ name }}/releases/download/v{{ version }}/{{ name }}_{{ version }}_{{ platform }}_{{ arch }}",
     "rename": "{{ name }}-{{ platform }}-{{ arch }}"
 }
