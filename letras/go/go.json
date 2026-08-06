@@ -6,5 +6,11 @@
         "gofmt": "bin/gofmt"
     },
     "url": "https://go.dev/dl/go{{ version }}.{{ platform }}-{{ arch }}.tar.gz",
-    "test": "go version"
+    "test": "go version",
+    "alias": {
+        "arch": {
+            "x64": "amd64"
+        }
+    }
+
 }
