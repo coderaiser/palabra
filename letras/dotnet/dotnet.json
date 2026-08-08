@@ -1,0 +1,18 @@
+{
+    "name": "dotnet",
+    "version": "10.0.302",
+    "url": "https://builds.dotnet.microsoft.com/{{ name }}/Sdk/{{ version }}/{{ name }}-sdk-{{ version }}-{{ platform }}-{{ arch }}.tar.gz",
+    "bin": {
+        "dotnet": "dotnet",
+        "dnx": "dnx"
+    },
+    "alias": {
+        "platform": {
+            "darwin": "macos"
+        }
+    },
+    "test": [
+        "dotnet --version"
+    ],
+    "extractDirectory": "{{ directorio }}/{{ name }}"
+}

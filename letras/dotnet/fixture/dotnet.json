@@ -1,0 +1,11 @@
+[
+    "mkdir -p ~/.local/bin",
+    "wget -c https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.302/dotnet-sdk-10.0.302-linux-arm64.tar.gz -O ${XDG_CACHE_HOME:-/tmp}/dotnet-sdk-10.0.302-linux-arm64.tar.gz",
+    "rm -rf ~/.local/share/dotnet",
+    "mkdir -p ~/.local/share/dotnet",
+    "tar xf ${XDG_CACHE_HOME:-/tmp}/dotnet-sdk-10.0.302-linux-arm64.tar.gz -C ~/.local/share/dotnet",
+    "rm ${XDG_CACHE_HOME:-/tmp}/dotnet-sdk-10.0.302-linux-arm64.tar.gz",
+    "ln -fs ~/.local/share/dotnet/dotnet ~/.local/bin/dotnet",
+    "ln -fs ~/.local/share/dotnet/dnx ~/.local/bin/dnx",
+    "dotnet --version"
+]
