@@ -1,6 +1,6 @@
 {
     "name": "golangci-lint",
-    "version": "2.12.2",
+    "version": "2.13.1",
     "url": "https://github.com/golangci/{{ name }}/releases/download/v{{ version }}/golangci-lint-{{ version }}-{{ platform }}-{{ arch }}.tar.gz",
     "bin": "golangci-lint",
     "alias": {
