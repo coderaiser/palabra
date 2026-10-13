@@ -1,6 +1,6 @@
 {
     "name": "f4",
-    "url": "https://github.com/unxed/{{ name }}/releases/download/nightly/{{ name }}-linux-{{ arch }}.tar.gz",
+    "url": "https://github.com/unxed/{{ name }}/releases/download/v0.3.0-beta/{{ name }}-{{ platform }}-{{ arch }}.tar.gz",
     "bin": "f4",
     "test": "f4 -v",
     "extractDirectory": "{{ directorio }}/{{ name }}",
