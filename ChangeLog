@@ -1,3 +1,17 @@
+2026.11.01, v2.30.8
+
+feature:
+- f3d4c6d palabra: arm
+- e2d2280 letras: bin: v0.29.4
+- a28d6b8 letras: dotnet: v10.0.403
+- a6ee1a5 letras: bun: v1.4.4
+- a8e5f8c letras: tape: v1.4.0
+- 962edd1 letras: task: v3.54.0
+- dc33f23 letras: oxker: v0.13.4
+- 67fb912 letras: nvm: v0.40.8
+- c662b55 letras: gh: v2.103.3
+- 23a2def letras: gdu: v5.38.0
+
 2026.11.01, v2.30.7
 
 feature:
