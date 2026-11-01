@@ -1,6 +1,6 @@
 {
     "name": "bun",
-    "version": "1.4.2",
+    "version": "1.4.4",
     "url": "https://bun.sh/install",
     "env": {
         "BUN_INSTALL": "{{ directorio }}/bun"
