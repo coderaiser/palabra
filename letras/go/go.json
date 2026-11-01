@@ -1,6 +1,6 @@
 {
     "name": "go",
-    "version": "1.26.5",
+    "version": "1.27.3",
     "bin": {
         "go": "bin/go",
         "gofmt": "bin/gofmt"
