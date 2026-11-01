@@ -1,7 +1,7 @@
 [
     "mkdir -p ~/.local/bin",
     "mkdir -p ~/.local/share/bin",
-    "wget https://github.com/marcosnils/bin/releases/download/v0.29.4/bin_0.24.3_linux_amd64 -O ~/.local/share/bin/bin",
+    "wget https://github.com/marcosnils/bin/releases/download/v0.29.4/bin_0.29.4_linux_amd64 -O ~/.local/share/bin/bin",
     "ln -fs ~/.local/share/bin/bin ~/.local/bin/bin",
     "chmod +x ~/.local/share/bin/bin",
     "bin -v"
