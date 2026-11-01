@@ -1,9 +1,14 @@
 {
     "name": "bin",
     "version": "0.29.4",
-    "url": "https://github.com/marcosnils/bin/releases/download/v{{ version }}/bin_{{ version }}_linux_amd64",
+    "url": "https://github.com/marcosnils/bin/releases/download/v{{ version }}/bin_{{ version }}_linux_{{ arch }}",
     "bin": "bin",
     "test": "bin -v",
     "preparado": true,
-    "executable": true
+    "executable": true,
+    "alias": {
+        "arch": {
+            "x64": "amd64"
+        }
+    }
 }
