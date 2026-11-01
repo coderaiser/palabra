@@ -1,6 +1,6 @@
 {
     "name": "gh",
-    "version": "2.95.0",
+    "version": "2.103.3",
     "url": {
         "darwin": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_macOS_{{ arch }}.zip",
         "linux": "https://github.com/cli/cli/releases/download/v{{ version }}/gh_{{ version }}_linux_{{ arch }}.tar.gz"
